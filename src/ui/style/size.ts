@@ -1,0 +1,5 @@
+export const Size = {
+  MOBILE_WIDTH: 320,
+  TABLET_WIDTH: 768,
+  DESKTOP_WIDTH: 1200,
+}

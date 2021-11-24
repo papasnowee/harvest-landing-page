@@ -1,0 +1,1 @@
+export { TextLogo } from './TextLogo'

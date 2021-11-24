@@ -1,0 +1,88 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "standard",
+    "plugin:jest/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "JSX": true,
+    "__WebpackModuleApi": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "jest"],
+  "rules": {
+    "linebreak-style": ["error", "unix"],
+    "no-use-before-define": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "@typescript-eslint/no-unused-vars-experimental": "error",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "ExportDefaultDeclaration",
+        "message": "Restricted default export, prefer named exports!"
+      }
+    ],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-prototype-builtins": "off",
+    "react/prop-types": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.stories.tsx"],
+      "rules": {
+        "no-restricted-syntax": ["off"]
+      }
+    },
+    {
+      "files": ["src/ui/**/*.*(tsx|jsx|ts|js)"],
+      "rules": {
+        "import/order": [
+          "error",
+          {
+            "groups": [
+              "builtin",
+              "external",
+              "type"
+            ],
+            "pathGroups": [
+              {
+                "pattern": "{./**/types,../**/types}",
+                "group": "type",
+                "position": "after"
+              },
+              {
+                "pattern": "{@/**,../**/*,./**/*}",
+                "group": "external",
+                "position": "after"
+              }
+            ],
+            "newlines-between": "always"
+          }
+        ]
+      }
+    }
+  ]
+}
