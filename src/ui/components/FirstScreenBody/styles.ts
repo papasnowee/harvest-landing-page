@@ -4,6 +4,7 @@ import { Size } from '@/ui/style/size'
 import { Color, FontWeight } from '@/ui/style'
 
 const Container = styled.div`
+  margin-top: 157px;
   border: 1px solid black;
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
@@ -29,6 +30,7 @@ const CaptionContainer = styled.div`
   font-size: 20px;
   color: ${Color.white};
   line-height: 36px;
+  margin-bottom: 34px;
 `
 
 export const Styled = {

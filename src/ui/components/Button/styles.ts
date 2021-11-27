@@ -1,21 +1,21 @@
 import styled from 'styled-components'
 
 import { getButtonStyle } from './utils'
+import { FontWeight } from '@/ui/style'
 
 import { ButtonProps } from './types'
 
 const Button = styled.button<ButtonProps>`
   ${(props) => {
     return `
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      min-height: 48px;
-      padding: 5px;    
-      box-shadow: none;  
-      border: none;
+      width: ${props.width};
+      height: 65px;
       border-radius: 10px;
       cursor: pointer;
+      border-radius: 8px;
+      font-weight: ${FontWeight.BOLD};
+      font-size: 16px;
+      line-height: 65px;
       ${getButtonStyle(props)}
 
       
@@ -25,19 +25,6 @@ const Button = styled.button<ButtonProps>`
   }}
 `
 
-const TextWrapper = styled.span`
-  ${() => {
-    return `
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1;
-      padding: 0 5px;
-    `
-  }}
-`
-
 export const Styled = {
   Button,
-  TextWrapper,
 }

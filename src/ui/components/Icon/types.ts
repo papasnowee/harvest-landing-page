@@ -1,5 +1,5 @@
 import HarvestLogo from '@/pictures/harvest-logo.inline.svg'
-import { palette } from '@/ui/style'
+import { Color } from '@/ui/style'
 
 export const IconList = {
   HARVEST_LOGO: HarvestLogo,
@@ -10,5 +10,5 @@ export type IconProps = {
   width?: string
   height?: string
   rotate?: number
-  color?: keyof typeof palette
+  color?: keyof typeof Color
 }

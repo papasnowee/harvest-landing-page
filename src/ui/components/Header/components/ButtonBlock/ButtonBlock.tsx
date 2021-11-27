@@ -14,6 +14,9 @@ export const ButtonBlock: FC = () => {
       <Styled.TextContainer>
         <Styled.Link href="">Blog</Styled.Link>
       </Styled.TextContainer>
+      <Styled.TextContainer>
+        <Styled.DashboardContainer href="">Dashboard</Styled.DashboardContainer>
+      </Styled.TextContainer>
     </Styled.Container>
   )
 }

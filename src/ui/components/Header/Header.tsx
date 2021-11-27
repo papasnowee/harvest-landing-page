@@ -7,12 +7,12 @@ import { ButtonBlock } from './components/ButtonBlock'
 export const Header: FC = () => {
   return (
     <Styled.HeaderContainer>
-      <Styled.LogoWrapper>
+      <Styled.Wrapper>
         <Logo />
-      </Styled.LogoWrapper>
-      <Styled.ButtonBlockWrapper>
-        <ButtonBlock />
-      </Styled.ButtonBlockWrapper>
+        <Styled.ButtonBlockWrapper>
+          <ButtonBlock />
+        </Styled.ButtonBlockWrapper>
+      </Styled.Wrapper>
     </Styled.HeaderContainer>
   )
 }

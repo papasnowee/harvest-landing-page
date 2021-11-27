@@ -8,8 +8,6 @@ const LogoImgWrapper = styled.span`
     @media(min-width: ${Size.MOBILE_WIDTH + 1}px) {
       display: none;
      }
-
-    padding-top: 13px;
     `
   }}
 `

@@ -7,13 +7,14 @@ export const getButtonStyle = (props: ButtonProps): string => {
 
   if (color === 'blue') {
     return `
-      color: ${Color.white}
-      background-color: ${Color.blue}
+      color: ${Color.white};
+      background: ${Color.blue};
+      border: 2px solid #6AB8E3;
       `
   }
 
   return `
-  color: ${Color.black}
-  background-color: ${Color.yellow}
+  color: ${Color.black};
+  background: ${Color.yellow};
   `
 }

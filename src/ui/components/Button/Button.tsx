@@ -5,9 +5,5 @@ import { Styled } from './styles'
 import { ButtonProps } from './types'
 
 export const Button: FC<ButtonProps> = (props) => (
-  <Styled.Button {...props}>
-    <Styled.TextWrapper>{props.text}</Styled.TextWrapper>
-  </Styled.Button>
+  <Styled.Button {...props}>{props.text}</Styled.Button>
 )
-
-Button.displayName = 'Button'
