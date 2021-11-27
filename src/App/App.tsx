@@ -5,14 +5,15 @@ import { MainPage } from '@/pages/MainPage/MainPage'
 
 import { observer } from 'mobx-react'
 
-import './styles/App.scss'
+import { Styled } from './styles'
 
 export const App = observer(() => {
   return (
     <>
       <GlobalStyle />
-      <MainPage />
-      <div>123333333333333333333</div>
+      <Styled.Container>
+        <MainPage />
+      </Styled.Container>
     </>
   )
 })

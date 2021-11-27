@@ -1,24 +1,10 @@
-import React, { ForwardedRef, PropsWithChildren } from 'react'
+import React, { PropsWithChildren } from 'react'
 
-import { IconProps } from '@/ui/Icon/types'
+type ButtonColor = 'blue' | 'yellow'
 
 export type ButtonProps = PropsWithChildren<{
-  kind?: ButtonKind
-  iconProps?: Omit<IconProps, 'color'>
-  inverted?: boolean
+  text: string
+  width?: string
+  color: ButtonColor
   onClick?(evt: React.MouseEvent<HTMLButtonElement>): void
 }>
-
-export type StyledButtonProps = ButtonProps & {
-  ref: ForwardedRef<HTMLButtonElement>
-  isHasChildren: boolean
-}
-
-export type IconBoxProps = Pick<ButtonProps, 'inverted'> & {
-  isHasChildren: boolean
-}
-
-export enum ButtonKind {
-  COMMON = 'common',
-  ACCENT = 'accent',
-}

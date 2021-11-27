@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import { palette, typography } from '@/ui/style'
+import { Color, typography } from '@/ui/style'
 const COMMON_STYLE = `
   margin: 0;
   padding: 0;
@@ -19,7 +19,7 @@ ${() => {
       background-size: 100%;
       background-repeat: no-repeat;
       background-image: url(src/pictures/mainPicture.png);
-      background-color: ${palette.mainBackGroundColor};
+      background-color: ${Color.mainPageBackGroundColor};
       font-family: ${typography.textMain.fontFamily};
       font-weight: ${typography.textMain.fontWeight};
       overflow: visible;

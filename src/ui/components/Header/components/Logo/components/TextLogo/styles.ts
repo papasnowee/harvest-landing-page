@@ -10,11 +10,10 @@ const Wrapper = styled.div`
         display: none;
         }
 
-        color: ${Color.WHITE_FONT};
+        color: ${Color.white};
         font-weight: ${FontWeight.BOLD};
         font-size: 28px;
         line-height: 50px;
-        padding-top: 34px;
   `
   }}
 `
