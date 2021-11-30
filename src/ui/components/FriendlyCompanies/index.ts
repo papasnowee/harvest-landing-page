@@ -1,0 +1,1 @@
+export { FriendlyCompanies } from './FriendlyCompanies'

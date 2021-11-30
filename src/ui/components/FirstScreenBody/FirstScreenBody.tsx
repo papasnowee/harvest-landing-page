@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 
-import { Button } from '../Button'
+import { FriendlyCompanies } from '@/ui/components/FriendlyCompanies'
+import { Button } from '@/ui/components/Button'
 import { Styled } from './styles'
 
 export const FirstScreenBody: FC = () => {
@@ -15,6 +16,7 @@ export const FirstScreenBody: FC = () => {
         <Styled.CaptionContainer>Put your idle assets to work 24/7/365</Styled.CaptionContainer>
         <Button width="225px" color="yellow" text="Start Earning Now" />
       </Styled.LeftBlock>
+      <FriendlyCompanies />
     </Styled.Container>
   )
 }

@@ -5,4 +5,5 @@ export const Color = {
   blue: '#6AB8E3',
   black: '#18214D',
   yellow: '#FFF056',
+  hoverYellow: '#F5E328',
 }
