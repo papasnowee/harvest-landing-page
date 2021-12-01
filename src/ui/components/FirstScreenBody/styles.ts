@@ -4,6 +4,8 @@ import { Size } from '@/ui/style/size'
 import { Color, FontWeight } from '@/ui/style'
 
 const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
   margin-top: 157px;
   border: 1px solid black;
 

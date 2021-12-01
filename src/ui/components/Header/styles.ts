@@ -42,6 +42,7 @@ const CenteringWrapper = styled.div`
 const Wrapper = styled.div<ScrolledDown>`
   ${(props) => {
     return `
+    z-index: 2;
       width: 100%;
       position: fixed;
       top: 0;

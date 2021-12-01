@@ -5,7 +5,7 @@ import { FontWeight } from '@/ui/style'
 
 import { ButtonProps } from './types'
 
-const Button = styled.button<ButtonProps>`
+const Button = styled.button<ButtonProps & { isClicked: boolean }>`
   ${(props) => {
     return `
       width: ${props.width};
@@ -16,11 +16,9 @@ const Button = styled.button<ButtonProps>`
       font-weight: ${FontWeight.BOLD};
       font-size: 16px;
       line-height: 65px;
-      ${getButtonStyle(props)}
+      transition: background 0.2s;
 
-      
-      &:hover {
-      }
+      ${getButtonStyle(props)}
     `
   }}
 `
