@@ -6,8 +6,7 @@ const Container = styled.div`
   ${() => {
     return `
       @media(max-width: ${Size.MOBILE_WIDTH}px) {
-        width: ${Size.MOBILE_HORIZONTAL_MIN_WIDTH}px;
-        padding: 
+        width: 280px;
       }
       margin: 0 auto;
       width: 1160px;

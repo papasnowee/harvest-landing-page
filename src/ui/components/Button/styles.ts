@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 import { getButtonStyle } from './utils'
 import { FontWeight } from '@/ui/style'
+import { Size } from '@/ui/style/size'
 
 import { ButtonProps } from './types'
 
@@ -17,6 +18,12 @@ const Button = styled.button<ButtonProps & { isClicked: boolean }>`
       font-size: 16px;
       line-height: 65px;
       transition: background 0.2s;
+
+      @media (max-width: ${Size.MOBILE_WIDTH + 1}px) {
+        height: 54px;
+        font-size: 14px;
+        line-height: 25px;
+      }
 
       ${getButtonStyle(props)}
     `

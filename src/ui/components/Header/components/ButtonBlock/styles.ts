@@ -59,6 +59,7 @@ const DashboardContainer = styled.a<ScrolledDown>`
       line-height: 54px;
       color: ${scrolledDown ? Color.black : Color.white};
       transition: color 0.2s, background 0.2s, border 0.2s;
+      backdrop-filter: blur(9px);
 
       &:hover {
 

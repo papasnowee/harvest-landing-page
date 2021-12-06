@@ -1,1 +1,1 @@
-export { FirstScreenBody } from './FirstScreenBody'
+export { FirstScreenBodyWeb, FirstScreenBodyMobile } from './FirstScreenBody'
