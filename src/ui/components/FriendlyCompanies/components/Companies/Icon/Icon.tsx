@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 
 import { Styled } from './styles'
-import { IconsMap } from './map'
+import { IconsMap } from '../icons/map'
 
 interface IconProps {
   iconName: keyof typeof IconsMap

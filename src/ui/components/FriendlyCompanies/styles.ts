@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { Size } from '@/ui/style/size'
 
 const Container = styled.div`
-  border: 1px solid red;
   position: relative;
   width: 434px;
   height: 400px;
@@ -11,7 +10,8 @@ const Container = styled.div`
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     width: 312px;
     height: 272px;
-    margin-left: -19px;
+    margin-left: 3px;
+    margin-bottom: 29px;
   }
 `
 

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { Size } from '@/ui/style/size'
 
-const SVGContainer = styled.div<{ circleColor: string }>`
+const SVGContainer = styled.div<{ circleColor?: string }>`
   ${(props) => {
     const { circleColor } = props
     return `

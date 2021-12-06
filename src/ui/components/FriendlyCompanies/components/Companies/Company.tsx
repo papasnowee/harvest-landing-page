@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 
 import { Styled } from './styles'
 import { IconsMap } from './icons/map'
-import { Icon } from './icons/icon'
+import { Icon } from './Icon'
 
 export interface IProps {
   circleColor?: string

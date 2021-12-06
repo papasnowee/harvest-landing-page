@@ -19,7 +19,7 @@ const ContainerMobile = styled.div`
   border: 1px solid yellow;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   margin-top: 95px;
 
   @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {

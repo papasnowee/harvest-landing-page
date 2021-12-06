@@ -14,7 +14,6 @@ const SVGContainer = styled.div`
   }
 `
 const SVGContainerMobile = styled.div`
-  border: 3px solid red;
   height: 222.8125vw;
   width: 100%;
   position: absolute;
