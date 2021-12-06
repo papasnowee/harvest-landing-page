@@ -11,6 +11,7 @@ const Container = styled.div`
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     width: 312px;
     height: 272px;
+    margin-left: -19px;
   }
 `
 

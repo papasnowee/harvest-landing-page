@@ -12,10 +12,10 @@ export const Header: FC = () => {
   const [scrolledDown, setScrolledDown] = useState(false)
 
   const onScroll = () => {
-    if (window.pageYOffset > 70 && !scrolledDown) {
+    if (window.pageYOffset > 55 && !scrolledDown) {
       setScrolledDown(true)
     }
-    if (window.pageYOffset < 70 && scrolledDown) {
+    if (window.pageYOffset < 55 && scrolledDown) {
       setScrolledDown(false)
     }
   }

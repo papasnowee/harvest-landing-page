@@ -16,9 +16,6 @@ ${() => {
 
     body {
       ${COMMON_STYLE}
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-image: url(src/pictures/mainPicture.png);
       background-color: ${Color.mainPageBackGroundColor};
       font-family: ${typography.textMain.fontFamily};
       font-weight: ${typography.textMain.fontWeight};
