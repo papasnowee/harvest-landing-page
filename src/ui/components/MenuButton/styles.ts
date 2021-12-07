@@ -9,40 +9,30 @@ const LineWrapper = styled.div`
   justify-content: space-between;
   width: 22px;
   height: 15px;
-  cursor: pointer;
-
-  & hover {
-    box-shadow: 0px 20px 40px rgba(108, 185, 227, 0.38);
-  }
-
-  @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
-    display: none;
-  }
-`
-const Container2 = styled.div`
-  width: 40px;
-  height: 40px;
-  position: relative;
-
-  @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
-    display: none;
-  }
-`
-
-const Container = styled.button`
-  all: unset;
-  position: absolute;
   margin: 0 auto;
-  left: 20px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
 
   @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
     display: none;
   }
 `
+const ContainerAbsolute = styled.button`
+  all: unset;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 9px;
 
+  cursor: pointer;
+`
+const Container = styled.div`
+  position: relative;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
+    display: none;
+  }
+`
 const Line = styled.div`
   background: ${Color.white};
   height: 2.2px;
@@ -51,7 +41,7 @@ const Line = styled.div`
 `
 
 export const Styled = {
-  Container2,
+  ContainerAbsolute,
   Container,
   LineWrapper,
   Line,

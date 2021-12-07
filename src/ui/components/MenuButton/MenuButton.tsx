@@ -10,14 +10,14 @@ export const MenuButton: FC<Props> = (props) => {
   const { onPress } = props
 
   return (
-    <Styled.Container2>
-      <Styled.Container>
+    <Styled.Container>
+      <Styled.ContainerAbsolute>
         <Styled.LineWrapper onClick={onPress}>
           <Styled.Line />
           <Styled.Line />
           <Styled.Line />
         </Styled.LineWrapper>
-      </Styled.Container>
-    </Styled.Container2>
+      </Styled.ContainerAbsolute>
+    </Styled.Container>
   )
 }
