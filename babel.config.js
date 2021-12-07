@@ -9,15 +9,4 @@ module.exports = {
     ['@babel/plugin-proposal-class-properties', { loose: false }],
     '@emotion',
   ],
-  env: {
-    production: {
-      plugins: ['@emotion'],
-    },
-    development: {
-      plugins: [['@emotion', { sourceMap: true }]],
-    },
-    test: {
-      plugins: ['transform-es2015-modules-commonjs'],
-    },
-  },
 }

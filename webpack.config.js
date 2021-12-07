@@ -62,13 +62,6 @@ module.exports = {
     publicPath: '/',
   },
   plugins: [
-    new Dotenv({
-      safe: true,
-      allowEmptyValues: false,
-      systemvars: true,
-      silent: false,
-      defaults: false,
-    }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),

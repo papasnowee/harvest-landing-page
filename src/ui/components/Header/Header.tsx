@@ -3,6 +3,7 @@ import React, { FC, useEffect, useState } from 'react'
 import { Logo } from '@/ui/components/Header/components/Logo'
 import { Styled } from './styles'
 import { ButtonBlock } from './components/ButtonBlock'
+import { MenuButton } from '../MenuButton'
 
 export interface ScrolledDown {
   scrolledDown: boolean
@@ -30,14 +31,15 @@ export const Header: FC = () => {
 
   return (
     <Styled.Wrapper scrolledDown={scrolledDown}>
-      <Styled.HeaderContainer>
+      <Styled.ContainerWithConstantWidth>
         <Styled.CenteringWrapper>
           <Logo />
+          <MenuButton onPress={() => {}} />
           <Styled.ButtonBlockWrapper>
             <ButtonBlock scrolledDown={scrolledDown} />
           </Styled.ButtonBlockWrapper>
         </Styled.CenteringWrapper>
-      </Styled.HeaderContainer>
+      </Styled.ContainerWithConstantWidth>
     </Styled.Wrapper>
   )
 }
