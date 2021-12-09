@@ -7,7 +7,6 @@ import { ScrolledDown } from './Header'
 const ContainerWithConstantWidth = styled.div`
   ${() => {
     return `
-    border: 1px solid black;
       display: flex;
       justify-content: space-between;
       height: 126px;
@@ -16,7 +15,7 @@ const ContainerWithConstantWidth = styled.div`
       width: 1160px;
 
       @media (max-width: ${Size.MOBILE_WIDTH}px) {
-        width: ${Size.MOBILE_HORIZONTAL_MIN_WIDTH}px;
+        width: 280px;
         height: 63px;
         padding-top: 13px;
       }

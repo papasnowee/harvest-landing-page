@@ -11,8 +11,8 @@ export const MenuButton: FC<Props> = (props) => {
 
   return (
     <Styled.Container>
-      <Styled.ContainerAbsolute>
-        <Styled.LineWrapper onClick={onPress}>
+      <Styled.ContainerAbsolute onClick={onPress}>
+        <Styled.LineWrapper>
           <Styled.Line />
           <Styled.Line />
           <Styled.Line />

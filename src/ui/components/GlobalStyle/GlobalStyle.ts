@@ -5,7 +5,6 @@ import { Size } from '@/ui/style/size'
 const COMMON_STYLE = `
   margin: 0;
   padding: 0;
-  height: 100%;
 `
 
 export const GlobalStyle = createGlobalStyle`

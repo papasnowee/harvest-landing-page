@@ -9,6 +9,8 @@ import { ButtonProps } from './types'
 const Button = styled.button<ButtonProps & { isClicked: boolean }>`
   ${(props) => {
     return `
+      padding: 0;
+      border: 0;
       width: ${props.width};
       height: 65px;
       border-radius: 10px;

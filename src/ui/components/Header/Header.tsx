@@ -4,6 +4,8 @@ import { Logo } from '@/ui/components/Header/components/Logo'
 import { Styled } from './styles'
 import { ButtonBlock } from './components/ButtonBlock'
 import { MenuButton } from '../MenuButton'
+import { Portal } from '@/ui/components/Portal'
+import { Modal } from './components/Modal'
 
 export interface ScrolledDown {
   scrolledDown: boolean
@@ -11,6 +13,16 @@ export interface ScrolledDown {
 
 export const Header: FC = () => {
   const [scrolledDown, setScrolledDown] = useState(false)
+
+  const [isVisible, setIsVisible] = useState(false)
+
+  const openModal = () => {
+    setIsVisible(true)
+  }
+
+  const closeModal = () => {
+    setIsVisible(false)
+  }
 
   const onScroll = () => {
     if (window.pageYOffset > 55 && !scrolledDown) {
@@ -31,10 +43,15 @@ export const Header: FC = () => {
 
   return (
     <Styled.Wrapper scrolledDown={scrolledDown}>
+      {isVisible && (
+        <Portal>
+          <Modal closeModal={closeModal} />
+        </Portal>
+      )}
       <Styled.ContainerWithConstantWidth>
         <Styled.CenteringWrapper>
           <Logo />
-          <MenuButton onPress={() => {}} />
+          <MenuButton onPress={openModal} />
           <Styled.ButtonBlockWrapper>
             <ButtonBlock scrolledDown={scrolledDown} />
           </Styled.ButtonBlockWrapper>
