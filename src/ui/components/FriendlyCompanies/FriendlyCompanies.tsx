@@ -1,9 +1,18 @@
 import React, { FC } from 'react'
 
 import { Company } from './components/Companies/Company'
+import { DownArrow } from './components/DownArrow'
 import { Harvest } from './components/Harvest'
 import { Money } from './components/Money'
 import { Styled } from './styles'
+import CompoundVectorIcon from './vectors/compoundVector.inline.svg'
+import UniswapVectorIcon from './vectors/uniswapVector.inline.svg'
+import CurveVectorIcon from './vectors/curveVector.inline.svg'
+import SushiswapVectorIcon from './vectors/sushiswapVector.inline.svg'
+import BalancerVectorIcon from './vectors/balancerVector.inline.svg'
+import EthereumVectorIcon from './vectors/ethereumVector.inline.svg'
+import StablecoinsKyberVectorIcon from './vectors/stablecoinsKyberVector.inline.svg'
+import KyberStablecoinsVectorIcon from './vectors/kyberStablecoinsVector.inline.svg'
 
 const stablecoinsCircleColor = '#C6DFF1'
 const kyberCircleColor = 'rgba(68, 202, 145, 0.22)'
@@ -45,6 +54,33 @@ export const FriendlyCompanies: FC = () => {
       <Styled.MoneyContainer>
         <Money />
       </Styled.MoneyContainer>
+      <Styled.DownArrowContainer>
+        <DownArrow />
+      </Styled.DownArrowContainer>
+      <Styled.CompoundVectorContainer>
+        <CompoundVectorIcon />
+      </Styled.CompoundVectorContainer>
+      <Styled.UniswapVectorContainer>
+        <UniswapVectorIcon />
+      </Styled.UniswapVectorContainer>
+      <Styled.CurveVectorContainer>
+        <CurveVectorIcon />
+      </Styled.CurveVectorContainer>
+      <Styled.SushiswapVectorContainer>
+        <SushiswapVectorIcon />
+      </Styled.SushiswapVectorContainer>
+      <Styled.BalancerVectorContainer>
+        <BalancerVectorIcon />
+      </Styled.BalancerVectorContainer>
+      <Styled.EthereumVectorContainer>
+        <EthereumVectorIcon />
+      </Styled.EthereumVectorContainer>
+      <Styled.StablecoinsKyberVectorContainer>
+        <StablecoinsKyberVectorIcon />
+      </Styled.StablecoinsKyberVectorContainer>
+      <Styled.KyberStablecoinsVectorContainer>
+        <KyberStablecoinsVectorIcon />
+      </Styled.KyberStablecoinsVectorContainer>
     </Styled.Container>
   )
 }

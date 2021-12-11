@@ -118,7 +118,7 @@ const StablecoinsContainer = styled.div`
   width: 131px;
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
-    left: 186px;
+    left: 202px;
     top: 173px;
     width: 97px;
   }
@@ -157,7 +157,202 @@ const MoneyContainer = styled.div`
     left: 125px;
   }
 `
+
+const DownArrowContainer = styled.div`
+  position: absolute;
+  left: 199px;
+  top: 261px;
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    top: 178px;
+    left: 153px;
+  }
+`
+const CompoundVectorContainer = styled.div`
+  & svg {
+    width: 46.75px;
+    height: 19.03px;
+  }
+
+  position: absolute;
+  left: 90px;
+  top: 217px;
+  transform: rotate(-7.36deg);
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    top: 148px;
+    left: 78px;
+
+    & svg {
+      display: block;
+      width: 31.8px;
+      height: 12.26px;
+    }
+  }
+`
+
+const UniswapVectorContainer = styled.div`
+  & svg {
+    width: 33.31px;
+    height: 8.57px;
+    display: block;
+  }
+
+  position: absolute;
+  left: 95px;
+  top: 150px;
+  transform: rotate(-6deg);
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    top: 102px;
+    left: 82px;
+
+    & svg {
+      width: 22.65px;
+      height: 5.83px;
+    }
+  }
+`
+const CurveVectorContainer = styled.div`
+  & svg {
+    width: 30.37px;
+    height: 44.89px;
+    display: block;
+  }
+
+  position: absolute;
+  left: 131px;
+  top: 101px;
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    top: 73px;
+    left: 104px;
+
+    & svg {
+      width: 20.65px;
+      height: 16.38px;
+    }
+  }
+`
+
+const SushiswapVectorContainer = styled.div`
+  & svg {
+    width: 29.93px;
+    height: 30.54px;
+    display: block;
+  }
+
+  position: absolute;
+  left: 161px;
+  top: 66px;
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    top: 45px;
+    left: 126px;
+
+    & svg {
+      width: 23.39px;
+      height: 14.42px;
+    }
+  }
+`
+const BalancerVectorContainer = styled.div`
+  & svg {
+    width: 19.28px;
+    height: 18.78px;
+    display: block;
+  }
+
+  position: absolute;
+  left: 233px;
+  top: 83px;
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    top: 55px;
+    left: 177px;
+
+    & svg {
+      width: 13.11px;
+      height: 12.76px;
+    }
+  }
+`
+
+const EthereumVectorContainer = styled.div`
+  & svg {
+    width: 16.84px;
+    height: 15.23px;
+    display: block;
+  }
+
+  position: absolute;
+  top: 132px;
+  left: 281px;
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    top: 90px;
+    left: 209px;
+
+    & svg {
+      width: 11.85px;
+      height: 10.72px;
+    }
+  }
+`
+
+const StablecoinsKyberVectorContainer = styled.div`
+  & svg {
+    width: 18.97px;
+    height: 13.03px;
+    display: block;
+  }
+
+  position: absolute;
+  top: 196px;
+  left: 289px;
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    top: 133px;
+    left: 214px;
+
+    & svg {
+      width: 12.91px;
+      height: 8.86px;
+    }
+  }
+`
+
+const KyberStablecoinsVectorContainer = styled.div`
+  & svg {
+    width: 23.41px;
+    height: 17.19px;
+    display: block;
+  }
+
+  position: absolute;
+  top: 244px;
+  left: 242px;
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    top: 169px;
+    left: 185px;
+
+    & svg {
+      width: 14.98px;
+      height: 11px;
+    }
+  }
+`
 export const Styled = {
+  KyberStablecoinsVectorContainer,
+  StablecoinsKyberVectorContainer,
+  EthereumVectorContainer,
+  BalancerVectorContainer,
+  SushiswapVectorContainer,
+  CurveVectorContainer,
+  UniswapVectorContainer,
+  CompoundVectorContainer,
+  DownArrowContainer,
   MoneyContainer,
   HarvestContainer,
   KyberContainer,
