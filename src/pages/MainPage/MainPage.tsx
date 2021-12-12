@@ -1,3 +1,4 @@
+import { ExchangeList } from '@/ui/components/ExchangeList'
 import { FirstScreenBodyWeb, FirstScreenBodyMobile } from '@/ui/components/FirstScreenBody'
 import React from 'react'
 
@@ -8,6 +9,7 @@ export const MainPage = () => {
     <Styled.Container>
       <FirstScreenBodyWeb />
       <FirstScreenBodyMobile />
+      <ExchangeList />
     </Styled.Container>
   )
 }

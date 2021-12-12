@@ -4,11 +4,15 @@ import { Size } from '@/ui/style/size'
 import { Color, FontWeight } from '@/ui/style'
 
 const ContainerWeb = styled.div`
-  border: 1px solid yellow;
   display: flex;
   justify-content: space-between;
-  margin-top: 157px;
+  margin-top: ${Size.FIRST_SCREEN_MARGIN_TOP}px;
   width: 1175px;
+  // this is necessary so that all the components under the main picture do not climb onto the main picture.
+  height: calc(
+    ${Size.MAIN_PICTURE_HEIGHT} + 32px - ${Size.MAIN_PAGE_OFFSET}px -
+      ${Size.FIRST_SCREEN_MARGIN_TOP}px
+  );
 
   @media (max-width: ${Size.MOBILE_WIDTH + 1}px) {
     display: none;
@@ -20,7 +24,9 @@ const ContainerMobile = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 95px;
+  margin-top: ${Size.FIRST_SCREEN_MARGIN_TOP_MOBILE}px;
+  // this is necessary so that all the components under the main picture do not climb onto the main picture.
+  height: calc(${Size.MAIN_PICTURE_HEIGHT_MOBILE} + 5px - ${Size.FIRST_SCREEN_MARGIN_TOP_MOBILE}px);
 
   @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
     display: none;
@@ -28,11 +34,10 @@ const ContainerMobile = styled.div`
 `
 
 const LeftBlock = styled.div`
-  border: 1px solid black;
+  padding-top: 25px;
   width: 632px;
 `
 const MainTextContainer = styled.div`
-  border: 1px solid black;
   font-weight: ${FontWeight.BOLD};
   font-size: 52px;
   color: ${Color.white};

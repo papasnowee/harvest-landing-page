@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 import { Size } from '@/ui/style/size'
-import { Color } from '@/ui/style'
 
 const LineWrapper = styled.div`
   display: flex;
@@ -33,11 +32,17 @@ const Container = styled.div`
     display: none;
   }
 `
-const Line = styled.div`
-  background: ${Color.white};
-  height: 2.2px;
-  transition: background 0.4s;
-  border-radius: 1.1px;
+const Line = styled.div<{ color: string }>`
+  ${(props) => {
+    const { color } = props
+
+    return `
+    background: ${color};
+    height: 2.2px;
+    transition: background 0.4s;
+    border-radius: 1.1px;
+    `
+  }}
 `
 
 export const Styled = {

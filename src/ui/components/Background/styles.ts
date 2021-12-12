@@ -3,18 +3,22 @@ import styled from 'styled-components'
 import { Size } from '@/ui/style/size'
 
 const SVGContainer = styled.div`
-  height: 42vw;
   position: absolute;
   z-index: -10;
   top: 0;
   left: 0;
+
+  & svg {
+    height: ${Size.MAIN_PICTURE_HEIGHT};
+    width: 100%;
+  }
 
   @media (max-width: ${Size.MOBILE_WIDTH + 1}px) {
     display: none;
   }
 `
 const SVGContainerMobile = styled.div`
-  height: 222.8125vw;
+  height: ${Size.MAIN_PICTURE_HEIGHT_MOBILE};
   width: 100%;
   position: absolute;
   z-index: -10;

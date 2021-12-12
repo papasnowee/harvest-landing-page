@@ -6,6 +6,7 @@ import { ButtonBlock } from './components/ButtonBlock'
 import { MenuButton } from '../MenuButton'
 import { Portal } from '@/ui/components/Portal'
 import { Modal } from './components/Modal'
+import { Color } from '@/ui/style'
 
 export interface ScrolledDown {
   scrolledDown: boolean
@@ -41,6 +42,8 @@ export const Header: FC = () => {
     }
   })
 
+  const menuButtonColor = scrolledDown ? Color.black : Color.white
+
   return (
     <Styled.Wrapper scrolledDown={scrolledDown}>
       {isVisible && (
@@ -51,7 +54,7 @@ export const Header: FC = () => {
       <Styled.ContainerWithConstantWidth>
         <Styled.CenteringWrapper>
           <Logo />
-          <MenuButton onPress={openModal} />
+          <MenuButton onPress={openModal} color={menuButtonColor} />
           <Styled.ButtonBlockWrapper>
             <ButtonBlock scrolledDown={scrolledDown} />
           </Styled.ButtonBlockWrapper>
