@@ -6,11 +6,7 @@ import type { InputProps } from './types'
 
 export const Input = styled.input<InputProps>`
   ${(props) => {
-    const {
-      width = '100%',
-      height = '45px',
-      theme: { palette } = light,
-    } = props
+    const { width = '100%', height = '45px', theme: { palette } = light } = props
 
     return `
       width: ${width};

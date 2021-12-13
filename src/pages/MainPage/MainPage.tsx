@@ -1,6 +1,7 @@
 import { ExchangeList } from '@/ui/components/ExchangeList'
 import { FirstScreenBodyWeb, FirstScreenBodyMobile } from '@/ui/components/FirstScreenBody'
 import { Player } from '@/ui/components/Player'
+import { Protocols } from '@/ui/components/Protocols/Protocols'
 import React from 'react'
 
 import { Styled } from './styles'
@@ -12,6 +13,7 @@ export const MainPage = () => {
       <FirstScreenBodyMobile />
       <ExchangeList />
       <Player />
+      <Protocols />
     </Styled.Container>
   )
 }

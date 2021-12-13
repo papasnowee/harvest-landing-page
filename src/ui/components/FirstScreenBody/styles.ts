@@ -20,7 +20,6 @@ const ContainerWeb = styled.div`
 `
 
 const ContainerMobile = styled.div`
-  border: 1px solid yellow;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +54,6 @@ const MainTextContainerMobile = styled.div`
 `
 
 const CaptionContainer = styled.div`
-  border: 1px solid black;
   font-weight: ${FontWeight.NORMAL};
   font-size: 20px;
   color: ${Color.white};
@@ -63,7 +61,6 @@ const CaptionContainer = styled.div`
   margin-bottom: 34px;
 `
 const CaptionContainerMobile = styled.div`
-  border: 1px solid black;
   font-weight: ${FontWeight.NORMAL};
   font-size: 14px;
   color: ${Color.white};

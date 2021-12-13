@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { Size } from '@/ui/style/size'
 
-const ListContainer = styled.div`
+const ListContainer = styled.ul`
   all: unset;
   display: block;
   display: flex;
