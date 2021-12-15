@@ -65,6 +65,7 @@ const TextContainerMobile = styled.span`
 
 const ProtocolContainer = styled.li`
   all: unset;
+  box-sizing: border-box;
   display: block;
   flex-shrink: 0;
   width: 176px;
