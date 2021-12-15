@@ -45,7 +45,6 @@ const MainTextContainer = styled.div`
 `
 
 const MainTextContainerMobile = styled.div`
-  height: 126px;
   text-align: center;
   font-weight: ${FontWeight.BOLD};
   font-size: 32px;

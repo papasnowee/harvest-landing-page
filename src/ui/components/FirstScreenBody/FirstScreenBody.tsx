@@ -9,9 +9,8 @@ export const FirstScreenBodyWeb: FC = () => {
     <Styled.ContainerWeb>
       <Styled.LeftBlock>
         <Styled.MainTextContainer>
-          Earn Money on Your
-          <br />
-          $ETH While You Sleep
+          Earn Yield <br />
+          on Your Crypto
         </Styled.MainTextContainer>
         <Styled.CaptionContainer>Put your idle assets to work 24/7/365</Styled.CaptionContainer>
         <Button width="225px" color="yellow" text="Start Earning Now" />
@@ -25,11 +24,9 @@ export const FirstScreenBodyMobile: FC = () => {
   return (
     <Styled.ContainerMobile>
       <Styled.MainTextContainerMobile>
-        Earn Money
+        Earn Yield
         <br />
-        on Your $ETH
-        <br />
-        While You Sleep
+        on Your Crypto
       </Styled.MainTextContainerMobile>
       <Styled.CaptionContainerMobile>
         Put your idle assets to work 24/7/365

@@ -12,14 +12,10 @@ import { Styled } from './styles'
 
 // TODO: add scroll in mobile version from figma layout
 
-export const Protocols: FC = () => {
+export const Ecosystem: FC = () => {
   return (
     <Styled.Container>
-      <Styled.TextContainer>Protocols we leverage for farming</Styled.TextContainer>
-      <Styled.TextContainerMobile>
-        Protocols we leverage <br />
-        for farming
-      </Styled.TextContainerMobile>
+      <Styled.TextContainer>Ecosystem</Styled.TextContainer>
       <Styled.ListContainer>
         <Styled.ProtocolContainer>
           <Styled.Link>

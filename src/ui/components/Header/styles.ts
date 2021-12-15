@@ -15,7 +15,7 @@ const ContainerWithConstantWidth = styled.div`
       width: 1160px;
 
       @media (max-width: ${Size.MOBILE_WIDTH}px) {
-        width: 280px;
+        width: 87%;
         height: 63px;
         padding-top: 13px;
       }

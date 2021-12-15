@@ -3,10 +3,11 @@ import { Cards } from '@/ui/components/Cards'
 import { ExchangeList } from '@/ui/components/ExchangeList'
 import { FirstScreenBodyWeb, FirstScreenBodyMobile } from '@/ui/components/FirstScreenBody'
 import { Player } from '@/ui/components/Player'
-import { Protocols } from '@/ui/components/Protocols/Protocols'
+import { Ecosystem } from '@/ui/components/Ecosystem'
 import { StartEarning } from '@/ui/components/StartEarning'
 
 import { Styled } from './styles'
+import { Audit } from '@/ui/components/Audit'
 
 export const MainPage = () => {
   return (
@@ -15,9 +16,10 @@ export const MainPage = () => {
       <FirstScreenBodyMobile />
       <ExchangeList />
       <Player />
-      <Protocols />
+      <Ecosystem />
       <StartEarning />
       <Cards />
+      <Audit />
     </Styled.Container>
   )
 }

@@ -46,20 +46,9 @@ const TextContainer = styled.span`
   color: ${Color.black};
   text-align: center;
 
-  @media (max-width: ${Size.MOBILE_WIDTH + 1}px) {
-    display: none;
-  }
-`
-
-const TextContainerMobile = styled.span`
-  font-weight: ${FontWeight.BOLD};
-  color: ${Color.black};
-  text-align: center;
-  font-size: 20px;
-  line-height: 28px;
-
-  @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
-    display: none;
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    font-size: 20px;
+    line-height: 28px;
   }
 `
 
@@ -242,7 +231,6 @@ const BalancerIconContainer = styled.div`
   }
 `
 export const Styled = {
-  TextContainerMobile,
   BalancerIconContainer,
   KyberIconContainer,
   CurveIconContainer,

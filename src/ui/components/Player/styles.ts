@@ -13,9 +13,11 @@ const Container = styled.button`
   position: relative;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 73px;
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     height: 196px;
+    margin-top: 23px;
   }
 `
 
@@ -76,10 +78,10 @@ const Iframe = styled.iframe`
 `
 
 export const Styled = {
-    Iframe,
-    Text,
-    ButtonTextContainer,
-    Container,
-    SVGContainerMobile,
-    SVGContainer,
+  Iframe,
+  Text,
+  ButtonTextContainer,
+  Container,
+  SVGContainerMobile,
+  SVGContainer,
 }
