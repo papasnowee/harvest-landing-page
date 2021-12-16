@@ -4,12 +4,14 @@ import { Size } from '@/ui/style/size'
 import { Color } from '@/ui/style'
 import { ScrolledDown } from './Header'
 
+const headerHeight = '126px'
+
 const ContainerWithConstantWidth = styled.div`
   ${() => {
     return `
       display: flex;
       justify-content: space-between;
-      height: 126px;
+      height: ${headerHeight};
       padding-top: 32px;
       margin: 0 auto;
       width: 1160px;
@@ -44,12 +46,17 @@ const Wrapper = styled.header<ScrolledDown>`
     return `
       z-index: 2;
       width: 100%;
-      position: fixed;
       top: 0;
-      color: ${props.scrolledDown ? Color.black : Color.white};
+      color: ${Color.white};
       transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-      ${props.scrolledDown && 'background: rgba(250, 251, 252, 0.9)'};
-      ${props.scrolledDown && 'box-shadow: 4px 16px 40px rgba(39, 68, 95, 0.1)'};
+      margin-bottom: -${headerHeight};
+
+      @media (max-width: ${Size.MOBILE_WIDTH}px) {
+        position: fixed;
+        color: ${props.scrolledDown ? Color.black : Color.white};
+        ${props.scrolledDown && 'background: rgba(250, 251, 252, 0.9)'};
+        ${props.scrolledDown && 'box-shadow: 4px 16px 40px rgba(39, 68, 95, 0.1)'};
+      }
       
     `
   }}

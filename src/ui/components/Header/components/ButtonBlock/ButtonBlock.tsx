@@ -16,6 +16,7 @@ export const ButtonBlock: FC<ScrolledDown> = (props) => {
   const handleMouseOutTokenomics = () => {
     setIsHoveredTokenomics(false)
   }
+
   const [isHoveredStatistics, setIsHoveredStatistics] = useState(false)
 
   const handleMouseOverStatistics = () => {
