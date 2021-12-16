@@ -7,4 +7,5 @@ export const Color = {
   blackForCompany: '#17263B',
   yellow: '#FFF056',
   hoverYellow: '#F5E328',
+  grayText: '#afb3c4',
 }

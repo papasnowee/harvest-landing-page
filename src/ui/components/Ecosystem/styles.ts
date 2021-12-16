@@ -230,7 +230,22 @@ const BalancerIconContainer = styled.div`
     }
   }
 `
+
+const Caption = styled.div`
+  margin-top: 24px;
+  font-weight: ${FontWeight.BOLD};
+  font-size: 18px;
+  line-height: 23px;
+  color: ${Color.grayText};
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+`
+
 export const Styled = {
+  Caption,
   BalancerIconContainer,
   KyberIconContainer,
   CurveIconContainer,

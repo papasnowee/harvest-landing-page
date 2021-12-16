@@ -66,6 +66,7 @@ export const Ecosystem: FC = () => {
           </Styled.Link>
         </Styled.ProtocolContainer>
       </Styled.ListContainer>
+      <Styled.Caption>+30 MORE</Styled.Caption>
     </Styled.Container>
   )
 }
