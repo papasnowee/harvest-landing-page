@@ -72,7 +72,7 @@ const HaechiContainer = styled.a`
   cursor: pointer;
   width: 192px;
   height: 39.65px;
-  margin-bottom: 7px;
+  margin-top: 6px;
   position: relative;
 
   & svg {
