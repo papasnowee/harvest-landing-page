@@ -1,8 +1,8 @@
 import React, { FC } from 'react'
 
 import { Styled } from './styles'
-import HarvestIcon from './harvest.inline.svg'
-import FarmerIcon from './farmer.inline.svg'
+import HarvesterIcon from './harvester.inline.svg'
+import TractorIcon from './tractor.inline.svg'
 import { Button } from '../Button'
 
 const firstCardtext =
@@ -12,19 +12,24 @@ export const Cards: FC = () => {
   return (
     <Styled.Container>
       <Styled.CardContainer>
-        <Styled.HarvestIconContainer>
-          <HarvestIcon />
-        </Styled.HarvestIconContainer>
+        <Styled.TractorIconContainer>
+          <TractorIcon />
+        </Styled.TractorIconContainer>
         <Styled.MainTextContainer>$FARM tokenomics</Styled.MainTextContainer>
         <Styled.Text>{firstCardtext}</Styled.Text>
         <Styled.ButtonContainer>
-          <Button text="Discover $FARM" width="260px" mobileWidth="100%" color="blue" />
+          <Button
+            text="Explore Jobs in the work with us box button"
+            width="400px"
+            mobileWidth="100%"
+            color="blue"
+          />
         </Styled.ButtonContainer>
       </Styled.CardContainer>
 
       <Styled.CardContainerSecond>
         <Styled.FarmerIconContainer>
-          <FarmerIcon />
+          <HarvesterIcon />
         </Styled.FarmerIconContainer>
         <Styled.MainTextContainer>Work with us</Styled.MainTextContainer>
         <Styled.Text>

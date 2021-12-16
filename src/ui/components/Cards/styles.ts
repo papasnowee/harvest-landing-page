@@ -25,20 +25,18 @@ const CardContainer = styled.div`
   height: 466px;
   padding: 0 50px 50px 50px;
 
-  background: linear-gradient(167.17deg, #ffffff 3.12%, rgba(255, 255, 255, 0) 130.37%);
-  filter: drop-shadow(4px 16px 60px rgba(39, 68, 95, 0.08));
+  background: ${Color.white};
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   border-radius: 24px;
 
   &:hover {
-    background: ${Color.white};
-    box-shadow: 4px 16px 60px rgba(39, 68, 95, 0.08);
+    box-shadow: 4px 16px 60px rgba(39, 68, 95, 0.18);
   }
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     width: 280px;
     height: 382px;
-    background: ${Color.white};
-    box-shadow: 4px 16px 60px rgba(39, 68, 95, 0.08);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     border-radius: 8px;
     padding: 0 24px 24px 24px;
   }
@@ -50,16 +48,16 @@ const CardContainerSecond = styled(CardContainer)`
   }
 `
 
-const HarvestIconContainer = styled.div`
+const TractorIconContainer = styled.div`
   margin-top: 50px;
   margin-bottom: 30px;
-  width: 131px;
-  height: 117px;
+  width: 160px;
+  height: 122px;
 
   svg {
     display: block;
-    width: 131px;
-    height: 117px;
+    width: 160px;
+    height: 122px;
   }
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
@@ -76,15 +74,15 @@ const HarvestIconContainer = styled.div`
   }
 `
 const FarmerIconContainer = styled.div`
-  margin-top: 36px;
-  margin-bottom: 26px;
-  width: 135px;
-  height: 135px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  width: 160px;
+  height: 122px;
 
   svg {
     display: block;
-    width: 135px;
-    height: 135px;
+    width: 160px;
+    height: 122px;
   }
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
@@ -136,7 +134,7 @@ export const Styled = {
   Text,
   MainTextContainer,
   FarmerIconContainer,
-  HarvestIconContainer,
+  TractorIconContainer,
   CardContainer,
   Container,
 }

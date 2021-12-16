@@ -61,6 +61,8 @@ const ProtocolContainer = styled.li`
   height: 154px;
   border: 1.5px solid #dddde9;
   border-radius: 12px;
+  background: ${Color.white};
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
   // TODO: return this styles when urls for protocols will be done
   // cursor: pointer;
@@ -73,7 +75,6 @@ const ProtocolContainer = styled.li`
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     width: 124px;
     height: 108px;
-    background: ${Color.white};
     border: 0;
     filter: drop-shadow(4px 16px 40px rgba(39, 68, 95, 0.1));
     border-radius: 8px;
