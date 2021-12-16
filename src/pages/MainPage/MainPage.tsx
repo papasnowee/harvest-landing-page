@@ -8,6 +8,7 @@ import { StartEarning } from '@/ui/components/StartEarning'
 
 import { Styled } from './styles'
 import { Audit } from '@/ui/components/Audit'
+import { Community } from '@/ui/components/Community'
 
 export const MainPage = () => {
   return (
@@ -20,6 +21,7 @@ export const MainPage = () => {
       <StartEarning />
       <Cards />
       <Audit />
+      <Community />
     </Styled.Container>
   )
 }
