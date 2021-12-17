@@ -11,25 +11,25 @@ export const Community: FC = () => {
     <Styled.Container>
       <Styled.Heading>Our Community</Styled.Heading>
       <Styled.CommunityPLatformContainer>
-        <Styled.CommunityContainer>
+        <Styled.CommunityContainer href="https://twitter.com/harvest_finance">
           <Styled.TwitterIconContainer>
             <TwitterIcon />
           </Styled.TwitterIconContainer>
           <Styled.Name>Twitter</Styled.Name>
         </Styled.CommunityContainer>
-        <Styled.CommunityContainer>
+        <Styled.CommunityContainer href="https://discord.com/invite/R5SeTVR">
           <Styled.DiscordIconContainer>
             <DiscordIcon />
           </Styled.DiscordIconContainer>
           <Styled.Name>Discord</Styled.Name>
         </Styled.CommunityContainer>
-        <Styled.CommunityContainer>
+        <Styled.CommunityContainer href="https://medium.com/harvest-finance">
           <Styled.MediumIconContainer>
             <MediumIcon />
           </Styled.MediumIconContainer>
           <Styled.Name>Medium</Styled.Name>
         </Styled.CommunityContainer>
-        <Styled.CommunityContainer>
+        <Styled.CommunityContainer href="https://www.reddit.com/r/HarvestFinance/">
           <Styled.RedditIconContainer>
             <RedditIcon />
           </Styled.RedditIconContainer>

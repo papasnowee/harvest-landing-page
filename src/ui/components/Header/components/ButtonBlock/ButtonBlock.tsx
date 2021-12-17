@@ -69,7 +69,7 @@ export const ButtonBlock: FC<ScrolledDown> = (props) => {
         </Styled.Link>
       </Styled.TextContainer>
       <Styled.TextContainer>
-        <Styled.DashboardContainer href="" scrolledDown={scrolledDown}>
+        <Styled.DashboardContainer href="https://harvest.finance" scrolledDown={scrolledDown}>
           Dashboard
         </Styled.DashboardContainer>
       </Styled.TextContainer>

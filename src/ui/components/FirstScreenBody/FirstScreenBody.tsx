@@ -13,7 +13,12 @@ export const FirstScreenBodyWeb: FC = () => {
           on Your Crypto
         </Styled.MainTextContainer>
         <Styled.CaptionContainer>Put your idle assets to work 24/7/365</Styled.CaptionContainer>
-        <Button width="225px" color="yellow" text="Start Earning Now" />
+        <Button
+          width="225px"
+          color="yellow"
+          text="Start Earning Now"
+          href="http://app.harvest.finance/"
+        />
       </Styled.LeftBlock>
       <FriendlyCompanies />
     </Styled.ContainerWeb>

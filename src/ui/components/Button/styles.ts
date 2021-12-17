@@ -32,7 +32,19 @@ const Button = styled.button<ButtonProps & { isClicked: boolean }>`
     `
   }}
 `
+const Link = styled.a<ButtonProps>`
+  ${(props) => {
+    return `
+      all: unset;
+      display: block;
+      width: ${props.width};
 
+      @media (max-width: ${Size.MOBILE_WIDTH + 1}px) {
+        width: ${props.mobileWidth};
+  `
+  }}
+`
 export const Styled = {
   Button,
+  Link,
 }
