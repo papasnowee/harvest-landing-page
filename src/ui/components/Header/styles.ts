@@ -6,6 +6,8 @@ import { ScrolledDown } from './Header'
 
 const headerHeight = '126px'
 
+export const headerMobileHeight = '63px'
+
 const ContainerWithConstantWidth = styled.div`
   ${() => {
     return `
@@ -18,7 +20,7 @@ const ContainerWithConstantWidth = styled.div`
 
       @media (max-width: ${Size.MOBILE_WIDTH}px) {
         width: 87%;
-        height: 63px;
+        height: ${headerMobileHeight};
         padding-top: 13px;
       }
     `
@@ -44,12 +46,12 @@ const CenteringWrapper = styled.div`
 const Wrapper = styled.header<ScrolledDown>`
   ${(props) => {
     return `
+      position: absolute;
       z-index: 2;
       width: 100%;
       top: 0;
       color: ${Color.white};
       transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-      margin-bottom: -${headerHeight};
 
       @media (max-width: ${Size.MOBILE_WIDTH}px) {
         position: fixed;

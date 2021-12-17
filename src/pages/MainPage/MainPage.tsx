@@ -9,6 +9,7 @@ import { StartEarning } from '@/ui/components/StartEarning'
 import { Styled } from './styles'
 import { Audit } from '@/ui/components/Audit'
 import { Community } from '@/ui/components/Community'
+import { Footer } from '@/ui/components/Footer'
 
 export const MainPage = () => {
   return (
@@ -22,6 +23,7 @@ export const MainPage = () => {
       <Cards />
       <Audit />
       <Community />
+      <Footer />
     </Styled.Container>
   )
 }

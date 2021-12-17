@@ -6,13 +6,10 @@ import { Color, FontWeight } from '@/ui/style'
 const ContainerWeb = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-top: ${Size.FIRST_SCREEN_MARGIN_TOP}px;
+  padding-top: ${Size.FIRST_SCREEN_MARGIN_TOP}px;
   width: 1175px;
   // this is necessary so that all the components under the main picture do not climb onto the main picture.
-  height: calc(
-    ${Size.MAIN_PICTURE_HEIGHT} + 32px - ${Size.MAIN_PAGE_OFFSET}px -
-      ${Size.FIRST_SCREEN_MARGIN_TOP}px
-  );
+  height: calc(${Size.MAIN_PICTURE_HEIGHT} + 32px - ${Size.MAIN_PAGE_OFFSET}px);
 
   @media (max-width: ${Size.MOBILE_WIDTH + 1}px) {
     display: none;
@@ -23,9 +20,9 @@ const ContainerMobile = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: ${Size.FIRST_SCREEN_MARGIN_TOP_MOBILE}px;
+  padding-top: ${Size.FIRST_SCREEN_MARGIN_TOP_MOBILE}px;
   // this is necessary so that all the components under the main picture do not climb onto the main picture.
-  height: calc(${Size.MAIN_PICTURE_HEIGHT_MOBILE} + 5px - ${Size.FIRST_SCREEN_MARGIN_TOP_MOBILE}px);
+  height: calc(${Size.MAIN_PICTURE_HEIGHT_MOBILE} - 10vw);
 
   @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
     display: none;

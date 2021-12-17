@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  height: 3200px;
+  position: relative;
 `
 
 const Modal = styled.div`

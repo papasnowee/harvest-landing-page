@@ -18,14 +18,13 @@ export const App = observer(() => {
   appStore.setRef(portalRef)
 
   return (
-    <>
+    // This container is needed for footer-picture correctly positioning footer picture.
+    <Styled.Container>
       <Styled.Modal id="modal-root" />
       <Header />
       <Background />
       <GlobalStyle />
-      <Styled.Container>
-        <MainPage />
-      </Styled.Container>
-    </>
+      <MainPage />
+    </Styled.Container>
   )
 })

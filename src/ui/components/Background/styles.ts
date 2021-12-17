@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { Size } from '@/ui/style/size'
 
-const SVGContainer = styled.div`
+const MainPictureContainer = styled.div`
   position: absolute;
   z-index: -10;
   top: 0;
@@ -17,7 +17,7 @@ const SVGContainer = styled.div`
     display: none;
   }
 `
-const SVGContainerMobile = styled.div`
+const MainPictureMobileContainer = styled.div`
   height: ${Size.MAIN_PICTURE_HEIGHT_MOBILE};
   width: 100%;
   position: absolute;
@@ -30,7 +30,48 @@ const SVGContainerMobile = styled.div`
   }
 `
 
+const FooterContainer = styled.div`
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  bottom: 0;
+
+  & svg {
+    bottom: 0;
+    display: block;
+    width: 100%;
+  }
+
+  @media (max-width: ${Size.MOBILE_WIDTH + 1}px) {
+    display: none;
+  }
+`
+
+const FooterContainerMobile = styled.div`
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  bottom: 0;
+
+  & svg {
+    bottom: 0;
+    display: block;
+    width: 100%;
+  }
+
+  @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
+    display: none;
+  }
+`
+
+const ContainerRealtive = styled.div`
+  position: relative;
+  height: 100%;
+`
 export const Styled = {
-  SVGContainer,
-  SVGContainerMobile,
+  FooterContainerMobile,
+  ContainerRealtive,
+  FooterContainer,
+  MainPictureContainer,
+  MainPictureMobileContainer,
 }
