@@ -43,7 +43,7 @@ export const ButtonBlock: FC<ScrolledDown> = (props) => {
         <Styled.Link
           onMouseOver={handleMouseOverTokenomics}
           onMouseOut={handleMouseOutTokenomics}
-          href=""
+          href="https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics"
         >
           <Styled.Text isHovered={isHoveredTokenomics} scrolledDown={scrolledDown}>
             Tokenomics
@@ -52,7 +52,7 @@ export const ButtonBlock: FC<ScrolledDown> = (props) => {
       </Styled.TextContainer>
       <Styled.TextContainer>
         <Styled.Link
-          href=""
+          href="https://farmdashboard.xyz/"
           onMouseOver={handleMouseOverStatistics}
           onMouseOut={handleMouseOutStatistics}
         >
@@ -62,7 +62,11 @@ export const ButtonBlock: FC<ScrolledDown> = (props) => {
         </Styled.Link>
       </Styled.TextContainer>
       <Styled.TextContainer>
-        <Styled.Link href="" onMouseOver={handleMouseOverBlog} onMouseOut={handleMouseOutBlog}>
+        <Styled.Link
+          href="https://medium.com/harvest-finance"
+          onMouseOver={handleMouseOverBlog}
+          onMouseOut={handleMouseOutBlog}
+        >
           <Styled.Text isHovered={isHoveredBlog} scrolledDown={scrolledDown}>
             Blog
           </Styled.Text>

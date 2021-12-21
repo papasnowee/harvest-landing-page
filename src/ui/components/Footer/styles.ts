@@ -4,21 +4,22 @@ import { Color, FontWeight } from '@/ui/style'
 import { Size } from '@/ui/style/size'
 
 const Container = styled.div`
-    margin-top: 112px;
-    height: 64px;
-    display flex;
-    justify-content: space-between;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: ${FontWeight.LIGHT};
-    color: ${Color.white};
+  margin-top: 112px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: ${FontWeight.LIGHT};
+  color: ${Color.white};
 
-    @media (max-width: ${Size.MOBILE_WIDTH}px) {
-        height: 247px;
-        font-size: 14px;
-        line-height: 21px;
-        flex-direction: column-reverse; 
-      }
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    height: 100%;
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 21px;
+    flex-direction: column-reverse;
+  }
 `
 
 const LinkBlock = styled.div`
@@ -35,6 +36,7 @@ const LinkBlock = styled.div`
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     flex-direction: column;
     align-content: center;
+    margin-bottom: 50px;
 
     > :nth-child(n) {
       margin-bottom: 24px;

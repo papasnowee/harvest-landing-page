@@ -28,6 +28,8 @@ const Heading = styled.div`
 `
 
 const CommunityContainer = styled.a`
+  all: unset;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -178,13 +180,13 @@ const Name = styled.div`
 `
 
 export const Styled = {
-    RedditIconContainer,
-    MediumIconContainer,
-    DiscordIconContainer,
-    Name,
-    TwitterIconContainer,
-    CommunityContainer,
-    CommunityPLatformContainer,
-    Container,
-    Heading,
+  RedditIconContainer,
+  MediumIconContainer,
+  DiscordIconContainer,
+  Name,
+  TwitterIconContainer,
+  CommunityContainer,
+  CommunityPLatformContainer,
+  Container,
+  Heading,
 }
