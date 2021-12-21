@@ -13,10 +13,17 @@ import icon6 from './icons/circle6.inline.svg'
 import icon7 from './icons/circle7.inline.svg'
 import icon8 from './icons/circle8.inline.svg'
 
+const makePrettyNumber = (number: number) => {
+  const intlNumber = new Intl.NumberFormat('en-US', {
+    style: 'decimal',
+  }).format(number)
+  return intlNumber.split(',').join(' ')
+}
+
 export const PeopleEarning: FC = () => {
   // TODO spinner instead 15000
   // TODO add pretty format for numberOfPeople 15000 --> 15 000
-  const [numberOfPeople, setNumberOfPeople] = useState(15000)
+  const [numberOfPeople, setNumberOfPeople] = useState(makePrettyNumber(15000000))
   // is it end of people list?
   const [isItListEnd, setIsItListEnd] = useState(false)
 

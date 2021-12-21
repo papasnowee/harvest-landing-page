@@ -20,10 +20,6 @@ const BottomBlockContainer = styled.div``
 const LeftBlock = styled.div`
   display: flex;
   flex-direction: column;
-  margin-right: 128px;
-
-  @media (max-width: ${Size.MOBILE_WIDTH}px) {
-  }
 `
 const NumberOfPeople = styled.div`
   font-weight: ${FontWeight.BOLD};
