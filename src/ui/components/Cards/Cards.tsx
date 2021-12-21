@@ -18,7 +18,7 @@ export const Cards: FC = () => {
         <Styled.MainTextContainer>$FARM tokenomics</Styled.MainTextContainer>
         <Styled.Text>{firstCardtext}</Styled.Text>
         <Styled.ButtonContainer>
-          <Button text="Explore $FARM" width="400px" mobileWidth="100%" color="blue" />
+          <Button text="Explore $FARM" width="260px" mobileWidth="100%" color="blue" />
         </Styled.ButtonContainer>
       </Styled.CardContainer>
 
