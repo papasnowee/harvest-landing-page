@@ -19,6 +19,7 @@ const Container = styled.div`
     font-size: 14px;
     line-height: 21px;
     flex-direction: column-reverse;
+    padding-bottom: 20px;
   }
 `
 
