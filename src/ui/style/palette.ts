@@ -8,4 +8,5 @@ export const Color = {
   yellow: '#FFF056',
   hoverYellow: '#F5E328',
   grayText: '#afb3c4',
+  lightFont: '#5C6077',
 }

@@ -1,0 +1,1 @@
+export { PeopleEarning } from './PeopleEarning'

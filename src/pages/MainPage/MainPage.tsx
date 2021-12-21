@@ -10,6 +10,7 @@ import { Styled } from './styles'
 import { Audit } from '@/ui/components/Audit'
 import { Community } from '@/ui/components/Community'
 import { Footer } from '@/ui/components/Footer'
+import { PeopleEarning } from '@/ui/components/PeopleEarning'
 
 export const MainPage = () => {
   return (
@@ -17,6 +18,7 @@ export const MainPage = () => {
       <FirstScreenBodyWeb />
       <FirstScreenBodyMobile />
       <ExchangeList />
+      <PeopleEarning />
       <Player />
       <Ecosystem />
       <StartEarning />
