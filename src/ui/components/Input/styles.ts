@@ -14,7 +14,6 @@ export const Input = styled.input<InputProps>`
       padding: 10px;
       background: ${palette.dropdownActive};
       border-radius: 10px;
-      box-sizing: border-box;
       border: none;
       border-radius: 10px;
       color: ${palette.textDropdownActive};

@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react'
 
+import { BLOG, DASHBOARD, STATISTICS, TOKENOMICS } from '@/constants'
 import { Styled } from './styles'
 
 import { ScrolledDown } from '../../Header'
@@ -43,7 +44,7 @@ export const ButtonBlock: FC<ScrolledDown> = (props) => {
         <Styled.Link
           onMouseOver={handleMouseOverTokenomics}
           onMouseOut={handleMouseOutTokenomics}
-          href="https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics"
+          href={TOKENOMICS}
         >
           <Styled.Text isHovered={isHoveredTokenomics} scrolledDown={scrolledDown}>
             Tokenomics
@@ -52,7 +53,7 @@ export const ButtonBlock: FC<ScrolledDown> = (props) => {
       </Styled.TextContainer>
       <Styled.TextContainer>
         <Styled.Link
-          href="https://farmdashboard.xyz/"
+          href={STATISTICS}
           onMouseOver={handleMouseOverStatistics}
           onMouseOut={handleMouseOutStatistics}
         >
@@ -62,18 +63,14 @@ export const ButtonBlock: FC<ScrolledDown> = (props) => {
         </Styled.Link>
       </Styled.TextContainer>
       <Styled.TextContainer>
-        <Styled.Link
-          href="https://medium.com/harvest-finance"
-          onMouseOver={handleMouseOverBlog}
-          onMouseOut={handleMouseOutBlog}
-        >
+        <Styled.Link href={BLOG} onMouseOver={handleMouseOverBlog} onMouseOut={handleMouseOutBlog}>
           <Styled.Text isHovered={isHoveredBlog} scrolledDown={scrolledDown}>
             Blog
           </Styled.Text>
         </Styled.Link>
       </Styled.TextContainer>
       <Styled.TextContainer>
-        <Styled.DashboardContainer href="https://harvest.finance" scrolledDown={scrolledDown}>
+        <Styled.DashboardContainer href={DASHBOARD} scrolledDown={scrolledDown}>
           Dashboard
         </Styled.DashboardContainer>
       </Styled.TextContainer>

@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 
+import { BLOG, DASHBOARD, STATISTICS, TOKENOMICS } from '@/constants'
 import { Button } from '@/ui/components/Button'
 import { Styled } from './styles'
 
@@ -14,12 +15,24 @@ export const Modal: FC<Props> = (props) => {
     <Styled.Container>
       <Styled.LinksBlock>
         <Styled.LinkContainer>
-          <a>Tokenomics</a>
-          <a>Statistics</a>
-          <a>Blog</a>
+          <Styled.SemanticLi>
+            <Styled.Link href={TOKENOMICS}>
+              <div>Tokenomics</div>
+            </Styled.Link>
+          </Styled.SemanticLi>
+          <Styled.SemanticLi>
+            <Styled.Link href={STATISTICS}>
+              <div>Statistics</div>
+            </Styled.Link>
+          </Styled.SemanticLi>
+          <Styled.SemanticLi>
+            <Styled.Link href={BLOG}>
+              <div>Blog</div>
+            </Styled.Link>
+          </Styled.SemanticLi>
         </Styled.LinkContainer>
         <Styled.ButtonContainer>
-          <Button text="Dashboard" width="194px" color="yellow" />
+          <Button text="Dashboard" width="194px" color="yellow" href={DASHBOARD} />
         </Styled.ButtonContainer>
       </Styled.LinksBlock>
       <Styled.CloseBlock onClick={closeModal} />

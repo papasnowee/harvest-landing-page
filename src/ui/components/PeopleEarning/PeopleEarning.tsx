@@ -22,8 +22,7 @@ const makePrettyNumber = (number: number) => {
 
 export const PeopleEarning: FC = () => {
   // TODO spinner instead 15000
-  // TODO add pretty format for numberOfPeople 15000 --> 15 000
-  const [numberOfPeople, setNumberOfPeople] = useState(makePrettyNumber(15000000))
+  const [numberOfPeople, setNumberOfPeople] = useState(makePrettyNumber(15000))
   // is it end of people list?
   const [isItListEnd, setIsItListEnd] = useState(false)
 

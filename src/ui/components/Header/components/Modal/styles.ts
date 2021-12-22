@@ -17,7 +17,8 @@ const LinksBlock = styled.div`
   background: #2a304d;
   backdrop-filter: blur(7px);
 `
-const LinkContainer = styled.div`
+const LinkContainer = styled.ul`
+  all: unset;
   margin-top: 163px;
   font-size: 16px;
   line-height: 20px;
@@ -42,10 +43,30 @@ const ButtonContainer = styled.div`
   justify-content: space-evenly;
 `
 
+const Link = styled.a`
+  all: unset;
+  display: block;
+  cursor: pointer;
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &:hover div {
+    border-bottom: 1px solid ${Color.white};
+  }
+`
+const SemanticLi = styled.li`
+  all: unset;
+  display: block;
+`
 export const Styled = {
-    ButtonContainer,
-    LinkContainer,
-    Container,
-    LinksBlock,
-    CloseBlock,
+  SemanticLi,
+  Link,
+  ButtonContainer,
+  LinkContainer,
+  Container,
+  LinksBlock,
+  CloseBlock,
 }

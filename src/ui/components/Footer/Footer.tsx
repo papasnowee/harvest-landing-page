@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 
+import { BLOG, DASHBOARD, DOCS, STATISTICS, TOKENOMICS } from '@/constants'
 import { Styled } from './styles'
 
 export const Footer: FC = () => {
@@ -8,13 +9,21 @@ export const Footer: FC = () => {
     <Styled.Container>
       <Styled.Text>{year}, Harvest.</Styled.Text>
       <Styled.LinkBlock>
-        <Styled.Link href="https://harvest-finance.gitbook.io/harvest-finance/general-info/what-do-we-do/profit-share-pool-and-farm-tokenomics">
-          Tokenomics
+        <Styled.Link href={TOKENOMICS}>
+          <Styled.ContainerForUnderline>Tokenomics</Styled.ContainerForUnderline>
         </Styled.Link>
-        <Styled.Link href="https://farmdashboard.xyz/">Statistics</Styled.Link>
-        <Styled.Link href="https://harvest.finance">Dashboard</Styled.Link>
-        <Styled.Link href="https://medium.com/harvest-finance">Blog</Styled.Link>
-        <Styled.Link href="https://harvest-finance.gitbook.io/">Docs</Styled.Link>
+        <Styled.Link href={STATISTICS}>
+          <Styled.ContainerForUnderline>Statistics</Styled.ContainerForUnderline>
+        </Styled.Link>
+        <Styled.Link href={DASHBOARD}>
+          <Styled.ContainerForUnderline>Dashboard</Styled.ContainerForUnderline>
+        </Styled.Link>
+        <Styled.Link href={BLOG}>
+          <Styled.ContainerForUnderline>Blog</Styled.ContainerForUnderline>
+        </Styled.Link>
+        <Styled.Link href={DOCS}>
+          <Styled.ContainerForUnderline>Docs</Styled.ContainerForUnderline>
+        </Styled.Link>
       </Styled.LinkBlock>
     </Styled.Container>
   )

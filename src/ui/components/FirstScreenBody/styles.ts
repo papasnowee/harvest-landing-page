@@ -9,7 +9,7 @@ const ContainerWeb = styled.div`
   padding-top: ${Size.FIRST_SCREEN_MARGIN_TOP}px;
   width: 1175px;
   // this is necessary so that all the components under the main picture do not climb onto the main picture.
-  height: calc(${Size.MAIN_PICTURE_HEIGHT} + 32px - ${Size.MAIN_PAGE_OFFSET}px);
+  height: calc(${Size.MAIN_PICTURE_HEIGHT} + 100px - ${Size.MAIN_PAGE_OFFSET}px);
 
   @media (max-width: ${Size.MOBILE_WIDTH + 1}px) {
     display: none;
@@ -22,7 +22,7 @@ const ContainerMobile = styled.div`
   align-items: center;
   padding-top: ${Size.FIRST_SCREEN_MARGIN_TOP_MOBILE}px;
   // this is necessary so that all the components under the main picture do not climb onto the main picture.
-  height: calc(${Size.MAIN_PICTURE_HEIGHT_MOBILE});
+  height: calc(${Size.MAIN_PICTURE_HEIGHT_MOBILE} + 30px);
 
   @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
     display: none;
