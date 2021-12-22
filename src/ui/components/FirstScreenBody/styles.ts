@@ -22,7 +22,7 @@ const ContainerMobile = styled.div`
   align-items: center;
   padding-top: ${Size.FIRST_SCREEN_MARGIN_TOP_MOBILE}px;
   // this is necessary so that all the components under the main picture do not climb onto the main picture.
-  height: calc(${Size.MAIN_PICTURE_HEIGHT_MOBILE} - 10vw);
+  height: calc(${Size.MAIN_PICTURE_HEIGHT_MOBILE});
 
   @media (min-width: ${Size.MOBILE_WIDTH + 1}px) {
     display: none;
