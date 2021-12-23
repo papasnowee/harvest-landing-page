@@ -54,6 +54,9 @@ const ListContainer = styled.ul`
       background: transparent; /* make scrollbar transparent */
     }
 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
     & li {
       margin-right: 10px;
     }
