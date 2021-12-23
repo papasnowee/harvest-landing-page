@@ -49,6 +49,11 @@ const ListContainer = styled.ul`
     overflow: auto;
     width: 100%;
 
+    ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+    }
+
     & li {
       margin-right: 10px;
     }
