@@ -4,39 +4,39 @@ import { Styled } from './styles'
 import CoinbaseIcon from './icons/coinbase.inline.svg'
 import BinanceIcon from './icons/binance.inline.svg'
 import CryptoComIcon from './icons/cryptoCom.inline.svg'
-import uniswapIcon from './icons/uniswap.png'
 import BancorIcon from './icons/bancor.inline.svg'
-
-const UniswapIcon: FC = () => <img src={uniswapIcon} />
 
 export const ExchangeList: FC = () => {
   return (
     <Styled.ListContainer>
-      <Styled.CoinbaseLi>
+      <Styled.Li>
         <Styled.Link href="https://www.coinbase.com/">
-          <CoinbaseIcon />
+          <Styled.CoinbaseIconContainer>
+            <CoinbaseIcon />
+          </Styled.CoinbaseIconContainer>
         </Styled.Link>
-      </Styled.CoinbaseLi>
-      <Styled.BinanceLi>
-        <Styled.Link href="https://www.binance.com/">
-          <BinanceIcon />
-        </Styled.Link>
-      </Styled.BinanceLi>
-      <Styled.CryptoComLi>
+      </Styled.Li>
+      <Styled.Li>
         <Styled.Link href="https://www.crypto.com/">
-          <CryptoComIcon />
+          <Styled.CryptoComIconContainer>
+            <CryptoComIcon />
+          </Styled.CryptoComIconContainer>
         </Styled.Link>
-      </Styled.CryptoComLi>
-      <Styled.UniswapLi>
-        <Styled.Link href="https://www.uniswap.org/">
-          <UniswapIcon />
+      </Styled.Li>
+      <Styled.Li>
+        <Styled.Link href="https://www.binance.com/">
+          <Styled.BinanceIconContainer>
+            <BinanceIcon />
+          </Styled.BinanceIconContainer>
         </Styled.Link>
-      </Styled.UniswapLi>
-      <Styled.BancorLi>
+      </Styled.Li>
+      <Styled.Li>
         <Styled.Link href="https://www.bancor.network/">
-          <BancorIcon />
+          <Styled.BancorIconContainer>
+            <BancorIcon />
+          </Styled.BancorIconContainer>
         </Styled.Link>
-      </Styled.BancorLi>
+      </Styled.Li>
     </Styled.ListContainer>
   )
 }

@@ -7,107 +7,141 @@ const ListContainer = styled.ul`
   display: block;
   display: flex;
   justify-content: space-between;
-  overflow: auto;
+  margin: 0 auto 110px auto;
 
-  & li {
-    margin-right: 25px;
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    margin-bottom: 26px;
+    flex-wrap: wrap;
+    width: 240px;
+    justify-content: space-evenly;
+    position: relative;
+  }
+`
+
+const CoinbaseIconContainer = styled.div`
+  height: 32px;
+  width: 158px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin-top: -6px;
+
+  svg {
+    height: 32px;
+    width: 158px;
+    display: block;
   }
 
-  & li:nth-last-child(1) {
-    margin-right: 0;
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    height: 21px;
+    width: 102px;
+
+    svg {
+      height: 21px;
+      width: 102px;
+    }
+  }
+`
+
+const BinanceIconContainer = styled.div`
+  height: 33px;
+  width: 163px;
+  cursor: pointer;
+  display: block;
+
+  svg {
+    height: 33px;
+    width: 163px;
+    display: block;
+  }
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    height: 19px;
+    width: 97px;
+
+    svg {
+      height: 19px;
+      width: 97px;
+    }
+  }
+`
+
+const CryptoComIconContainer = styled.div`
+  height: 45px;
+  width: 194px;
+  cursor: pointer;
+  display: block;
+
+  svg {
+    height: 45px;
+    width: 194px;
+    display: block;
+  }
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    height: 28px;
+    width: 122px;
+    position: relative;
+    margin-left: 20px;
+
+    svg {
+      height: 28px;
+      width: 122px;
+    }
+  }
+`
+
+const BancorIconContainer = styled.div`
+  height: 48px;
+  width: 145px;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  margin-left: -20px;
+
+  svg {
+    height: 48px;
+    width: 145px;
+    display: block;
+  }
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    height: 30px;
+    width: 91px;
+
+    svg {
+      height: 30px;
+      width: 91px;
+    }
+  }
+`
+const Li = styled.li`
+  all: unset;
+  width: 229px;
+  height: 91px;
+
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    width: 120px;
+    height: 40px;
   }
 `
 
 const Link = styled.a`
   all: unset;
-  height: 98px;
-  display: flex;
-  align-items: center;
+  display: block;
+  height: 100%;
   cursor: pointer;
-
-  @media (max-width: ${Size.MOBILE_WIDTH}px) {
-    height: 63px;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 `
 
-const CoinbaseLi = styled.li`
-  all: unset;
-
-  & svg {
-    width: 158px;
-    height: 31.99px;
-    display: block;
-
-    @media (max-width: ${Size.MOBILE_WIDTH}px) {
-      width: 102.02px;
-      height: 20.65px;
-    }
-  }
-`
-const BinanceLi = styled.li`
-  all: unset;
-
-  & svg {
-    width: 163px;
-    height: 32.6px;
-    display: block;
-
-    @media (max-width: ${Size.MOBILE_WIDTH}px) {
-      width: 96.77px;
-      height: 19.35px;
-    }
-  }
-`
-
-const CryptoComLi = styled.li`
-  all: unset;
-
-  & svg {
-    width: 194px;
-    height: 45px;
-    display: block;
-
-    @media (max-width: ${Size.MOBILE_WIDTH}px) {
-      width: 122.19px;
-      height: 28.07px;
-    }
-  }
-`
-const UniswapLi = styled.li`
-  all: unset;
-
-  & img {
-    width: 185px;
-    height: 47px;
-    display: block;
-
-    @media (max-width: ${Size.MOBILE_WIDTH}px) {
-      width: 118px;
-      height: 29.98px;
-    }
-  }
-`
-
-const BancorLi = styled.li`
-  all: unset;
-
-  & svg {
-    width: 145px;
-    height: 47.78px;
-    display: block;
-
-    @media (max-width: ${Size.MOBILE_WIDTH}px) {
-      width: 82.49px;
-      height: 30.48px;
-    }
-  }
-`
 export const Styled = {
-  BancorLi,
-  UniswapLi,
+  CoinbaseIconContainer,
+  BinanceIconContainer,
+  CryptoComIconContainer,
+  BancorIconContainer,
   Link,
-  CryptoComLi,
-  BinanceLi,
+  Li,
   ListContainer,
-  CoinbaseLi,
 }

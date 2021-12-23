@@ -3,6 +3,10 @@ import styled from 'styled-components'
 import { Size } from '@/ui/style/size'
 import { Color, FontWeight } from '@/ui/style'
 
+const possibleSizeofScrollBar = '25px'
+
+const protocolHeight = '108px'
+
 const Container = styled.div`
   margin-top: 130px;
   display: flex;
@@ -14,11 +18,20 @@ const Container = styled.div`
     width: 280px;
   }
 `
+const WithoutScrollBarWrapper = styled.div`
+  margin-top: 40px;
 
+  @media (max-width: ${Size.MOBILE_WIDTH}px) {
+    position: relative;
+    margin-top: 18px;
+    height: ${protocolHeight};
+    width: calc(${Size.MOBILE_HORIZONTAL_MIN_WIDTH}px + 20px);
+    overflow: hidden;
+  }
+`
 const ListContainer = styled.ul`
   all: unset;
   display: block;
-  margin-top: 40px;
   display: flex;
   width: 100%;
 
@@ -31,8 +44,10 @@ const ListContainer = styled.ul`
   }
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
-    margin-top: 18px;
+    height: calc(${protocolHeight + possibleSizeofScrollBar});
+    position: absolute;
     overflow: auto;
+    width: 100%;
 
     & li {
       margin-right: 10px;
@@ -74,9 +89,9 @@ const ProtocolContainer = styled.li`
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     width: 124px;
-    height: 108px;
+    height: ${protocolHeight};
     border: 0;
-    filter: drop-shadow(4px 16px 40px rgba(39, 68, 95, 0.1));
+    box-shadow: unset;
     border-radius: 8px;
   }
 `
@@ -246,6 +261,7 @@ const Caption = styled.div`
 `
 
 export const Styled = {
+  WithoutScrollBarWrapper,
   Caption,
   BalancerIconContainer,
   KyberIconContainer,
