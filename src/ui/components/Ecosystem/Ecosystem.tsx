@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 
-import SushiswapIcon from './icons/sushiswap.inline.svg'
-import CompoundIcon from './icons/compound.inline.svg'
-import UniswapIcon from './icons/uniswap.inline.svg'
-import CurveIcon from './icons/curve.inline.svg'
-import KyberIcon from './icons/kyber.inline.svg'
+import SushiswapIcon from '@/pictures/sushiswap.inline.svg'
+import CurveIcon from '@/pictures/curve.inline.svg'
+import UniswapIcon from '@/pictures/uniswap.inline.svg'
+import CompoundIcon from '@/pictures/compound.inline.svg'
+import KyberIcon from '@/pictures/kyber.inline.svg'
 import BalancerIcon from './icons/balancer.inline.svg'
 import { Styled } from './styles'
 

@@ -16,22 +16,26 @@ import KyberStablecoinsVectorIcon from './vectors/kyberStablecoinsVector.inline.
 
 const stablecoinsCircleColor = '#C6DFF1'
 const kyberCircleColor = 'rgba(68, 202, 145, 0.22)'
+const compoundCircleColor = 'rgb(222, 249, 241)'
+const sushiswapCircleColor = '#F8D0FF'
+const curveCircleColor = '#BCA7DE;'
+const uniswapCircleColor = 'rgba(255, 0, 122, 0.12)'
 
 export const FriendlyCompanies: FC = () => {
   return (
     <Styled.Container>
       <Styled.Background />
       <Styled.SushiswapContainer>
-        <Company text="Sushiswap" icon="sushiswap" />
+        <Company text="Sushiswap" icon="sushiswap" circleColor={sushiswapCircleColor} />
       </Styled.SushiswapContainer>
       <Styled.CurveContainer>
-        <Company text="Curve" icon="curve" />
+        <Company text="Curve" icon="curve" circleColor={curveCircleColor} />
       </Styled.CurveContainer>
       <Styled.UniswapContainer>
-        <Company text="Uniswap" icon="uniswap" />
+        <Company text="Uniswap" icon="uniswap" circleColor={uniswapCircleColor} />
       </Styled.UniswapContainer>
       <Styled.CompoundContainer>
-        <Company text="Compound" icon="compound" />
+        <Company text="Compound" icon="compound" circleColor={compoundCircleColor} />
       </Styled.CompoundContainer>
       <Styled.BalancerContainer>
         <Company text="Balancer" icon="balancer" />
