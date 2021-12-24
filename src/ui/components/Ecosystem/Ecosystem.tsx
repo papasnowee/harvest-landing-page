@@ -8,8 +8,6 @@ import KyberIcon from '@/pictures/kyber.inline.svg'
 import BalancerIcon from './icons/balancer.inline.svg'
 import { Styled } from './styles'
 
-// TODO: reuse these icons for FriendlyCompanies component
-
 export const Ecosystem: FC = () => {
   return (
     <Styled.Container>
