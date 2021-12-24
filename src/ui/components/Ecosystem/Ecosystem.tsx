@@ -10,8 +10,6 @@ import { Styled } from './styles'
 
 // TODO: reuse these icons for FriendlyCompanies component
 
-// TODO: add scroll in mobile version from figma layout
-
 export const Ecosystem: FC = () => {
   return (
     <Styled.Container>

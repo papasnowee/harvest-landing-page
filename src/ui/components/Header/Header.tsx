@@ -12,7 +12,12 @@ export interface ScrolledDown {
   scrolledDown: boolean
 }
 
-export const Header: FC = () => {
+interface Props {
+  modalRoot: React.MutableRefObject<Element>
+}
+
+export const Header: FC<Props> = (props) => {
+  const modalRoot = props.modalRoot.current
   const [scrolledDown, setScrolledDown] = useState(false)
 
   const [isVisible, setIsVisible] = useState(false)
@@ -47,7 +52,7 @@ export const Header: FC = () => {
   return (
     <Styled.Wrapper scrolledDown={scrolledDown}>
       {isVisible && (
-        <Portal>
+        <Portal modalRoot={modalRoot}>
           <Modal closeModal={closeModal} />
         </Portal>
       )}

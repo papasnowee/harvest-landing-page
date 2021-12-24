@@ -2,29 +2,21 @@ import React, { useRef } from 'react'
 
 import { GlobalStyle } from '@/ui/components/GlobalStyle'
 import { MainPage } from '@/pages/MainPage/MainPage'
-
-import { observer } from 'mobx-react'
-
-import { Styled } from './styles'
 import { Header } from '@/ui/components/Header'
 import { Background } from '@/ui/components/Background'
-import { useStores } from '@/stores/utils'
+import { Styled } from './styles'
 
-export const App = observer(() => {
-  const { appStore } = useStores()
-
-  const portalRef = useRef(null)
-
-  appStore.setRef(portalRef)
+export const App = () => {
+  const modalRoot = useRef(null)
 
   return (
     // This container is needed for footer-picture correctly positioning footer picture.
     <Styled.Container>
-      <Styled.Modal id="modal-root" />
-      <Header />
+      <Styled.ModalRoot id="modal-root" ref={modalRoot} />
+      <Header modalRoot={modalRoot} />
       <Background />
       <GlobalStyle />
       <MainPage />
     </Styled.Container>
   )
-})
+}

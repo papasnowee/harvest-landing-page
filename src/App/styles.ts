@@ -4,7 +4,7 @@ const Container = styled.div`
   position: relative;
 `
 
-const Modal = styled.div`
+const ModalRoot = styled.div`
   z-index: 10;
   position: fixed;
   top: 0;
@@ -12,5 +12,5 @@ const Modal = styled.div`
 
 export const Styled = {
   Container,
-  Modal,
+  ModalRoot,
 }

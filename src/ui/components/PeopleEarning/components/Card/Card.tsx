@@ -6,8 +6,7 @@ interface Props {
   userAddress: string
   percent: number
   perDay: number
-  // TODO type it
-  icon: any
+  icon: any // svg import
 }
 
 const makePrettyCurrency = (number: number) => {
