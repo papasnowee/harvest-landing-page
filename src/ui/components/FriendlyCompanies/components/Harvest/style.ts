@@ -72,9 +72,9 @@ const TextContainer = styled.div`
 `
 
 export const Styled = {
-    TextContainer,
-    SVGContainer,
-    ThirdCircle,
-    SecondCircle,
-    FirstCircle,
+  TextContainer,
+  SVGContainer,
+  ThirdCircle,
+  SecondCircle,
+  FirstCircle,
 }

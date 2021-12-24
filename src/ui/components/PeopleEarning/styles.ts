@@ -69,10 +69,11 @@ const Button = styled.button<{ isActive: boolean }>`
             width: 64px;
             height: 64px;
             margin-right: 30px;
-            background: ${isActive
-        ? Color.blue
-        : 'linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 91.82%)'
-      };
+            background: ${
+              isActive
+                ? Color.blue
+                : 'linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 91.82%)'
+            };
 
             box-shadow: ${isActive && '4px 16px 40px rgba(39, 68, 95, 0.08)'};
             filter: ${isActive && 'drop-shadow(4px 16px 40px rgba(39, 68, 95, 0.08))'};

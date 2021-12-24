@@ -14,10 +14,11 @@ const Container = styled.div<{ isActive: boolean }>`
         align-items: center;
         border-radius: 8px;
 
-        background: ${isActive
-        ? Color.blue
-        : 'linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 91.82%)'
-      };
+        background: ${
+          isActive
+            ? Color.blue
+            : 'linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 91.82%)'
+        };
 
       box-shadow: ${isActive ? '4px 16px 40px rgba(39, 68, 95, 0.08)' : ''};
       filter: ${isActive ? '' : 'drop-shadow(4px 16px 40px rgba(39, 68, 95, 0.08))'};

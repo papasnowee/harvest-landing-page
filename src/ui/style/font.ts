@@ -1,5 +1,5 @@
 export const FontFamily = {
-  PT_SANS: 'Poppins',
+  MAIN: 'Poppins',
 }
 
 export const FontWeight = {

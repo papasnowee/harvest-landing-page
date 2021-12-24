@@ -16,7 +16,7 @@ const Container = styled.div`
 const Heading = styled.div`
   margin-bottom: 40px;
   font-weight: ${FontWeight.BOLD};
-  colo: ${Color.black};
+  color: ${Color.black};
   font-size: 36px;
   line-height: 47px;
 

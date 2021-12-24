@@ -61,8 +61,8 @@ const SVGContainer = styled.div`
 `
 
 export const Styled = {
-    SVGContainer,
-    Circle1,
-    Circle2,
-    Circle3,
+  SVGContainer,
+  Circle1,
+  Circle2,
+  Circle3,
 }

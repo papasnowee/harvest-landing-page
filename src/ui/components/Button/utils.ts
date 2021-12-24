@@ -13,8 +13,9 @@ export const getButtonStyle = (props: ButtonProps & { isClicked: boolean }): str
       background: ${Color.blue};
       
       &:hover {
-        background: ${isClicked ? Color.blue : 'linear-gradient(92.11deg, #95D5F9 1.5%, #63B3DF 91.93%)'
-      };
+        background: ${
+          isClicked ? Color.blue : 'linear-gradient(92.11deg, #95D5F9 1.5%, #63B3DF 91.93%)'
+        };
         box-shadow: 0px 20px 40px rgba(108, 185, 227, 0.38);
       }
       `
