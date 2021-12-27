@@ -4,7 +4,7 @@ import { Size } from '@/ui/style/size'
 
 const MainPictureContainer = styled.div`
   position: absolute;
-  z-index: -10;
+  z-index: -9;
   top: 0;
   left: 0;
 
@@ -21,7 +21,7 @@ const MainPictureMobileContainer = styled.div`
   height: ${Size.MAIN_PICTURE_HEIGHT_MOBILE};
   width: 100%;
   position: absolute;
-  z-index: -10;
+  z-index: -9;
   top: 0;
   left: 0;
 
@@ -32,7 +32,7 @@ const MainPictureMobileContainer = styled.div`
 
 const FooterContainer = styled.div`
   position: absolute;
-  z-index: -10;
+  z-index: -9;
   width: 100%;
   bottom: 0;
 
@@ -49,7 +49,7 @@ const FooterContainer = styled.div`
 
 const FooterContainerMobile = styled.div`
   position: absolute;
-  z-index: -10;
+  z-index: -9;
   width: 100%;
   bottom: 0;
 

@@ -1,10 +1,10 @@
 import React from 'react'
 
 import { Styled } from './styles'
-import { Icon } from '@/ui/components/Icon'
+import Icon from '@/pictures/harvest-logo.inline.svg'
 
 export const IconLogo = () => (
   <Styled.LogoImgWrapper>
-    <Icon iconName="HARVEST_LOGO" width="37px" height="37px" />
+    <Icon />
   </Styled.LogoImgWrapper>
 )

@@ -9,8 +9,12 @@ const ModalRoot = styled.div`
   position: fixed;
   top: 0;
 `
-
+const Hidden = styled.div`
+  z-index: -9;
+  position: absolute;
+`
 export const Styled = {
+  Hidden,
   Container,
   ModalRoot,
 }

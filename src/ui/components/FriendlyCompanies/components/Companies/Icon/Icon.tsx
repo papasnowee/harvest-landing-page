@@ -13,7 +13,7 @@ export const Icon: FC<IconProps> = (props) => {
   const SVG = IconsMap[iconName]
   return (
     <Styled.SVGContainer circleColor={circleColor}>
-      <SVG width="100%" height="100%" />
+      <SVG />
     </Styled.SVGContainer>
   )
 }
