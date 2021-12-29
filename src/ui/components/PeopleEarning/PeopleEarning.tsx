@@ -28,15 +28,17 @@ export const PeopleEarning: FC = () => {
   useEffect(() => {
     const getUsersNumber = async () => {
       const transactions = await API.getTransactions()
-      transactions.sort((a: Transactions, b: Transactions): number => {
-        if (a.blockDate > b.blockDate) return -1
-        if (a.blockDate === b.blockDate) return 0
-        if (a.blockDate < b.blockDate) return 1
-      })
+      if (transactions.length) {
+        transactions.sort((a: Transactions, b: Transactions): number => {
+          if (a.blockDate > b.blockDate) return -1
+          if (a.blockDate === b.blockDate) return 0
+          if (a.blockDate < b.blockDate) return 1
+        })
 
-      setNumberOfPeople(makePrettyNumber(transactions[0].allOwnersCount))
+        setNumberOfPeople(makePrettyNumber(transactions[0].allOwnersCount))
+      }
+      setNumberOfPeople('Network error')
     }
-
     getUsersNumber()
   })
 
