@@ -29,10 +29,6 @@ const CardContainer = styled.div`
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   border-radius: 24px;
 
-  &:hover {
-    box-shadow: 4px 16px 60px rgba(39, 68, 95, 0.18);
-  }
-
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     width: 280px;
     height: 382px;

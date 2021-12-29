@@ -3,7 +3,7 @@ import { Color } from '@/ui/style'
 import { ButtonProps } from './types'
 
 export const getButtonStyle = (props: ButtonProps & { isClicked: boolean }): string => {
-  const { color, isClicked } = props
+  const { color } = props
 
   if (color === 'blue') {
     return `
@@ -13,10 +13,7 @@ export const getButtonStyle = (props: ButtonProps & { isClicked: boolean }): str
       background: ${Color.blue};
       
       &:hover {
-        background: ${
-          isClicked ? Color.blue : 'linear-gradient(92.11deg, #95D5F9 1.5%, #63B3DF 91.93%)'
-        };
-        box-shadow: 0px 20px 40px rgba(108, 185, 227, 0.38);
+        background: ${Color.hoverBlue};
       }
       `
   }
@@ -26,8 +23,7 @@ export const getButtonStyle = (props: ButtonProps & { isClicked: boolean }): str
   background: ${Color.yellow};
   
   &:hover {
-    background: ${isClicked ? Color.yellow : Color.hoverYellow};
-    box-shadow: 0px 20px 40px rgba(245, 227, 40, 0.38);
+    background: ${Color.hoverYellow};
   }
   `
 }

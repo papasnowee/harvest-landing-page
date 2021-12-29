@@ -3,7 +3,7 @@ import React, { FC } from 'react'
 import { Styled } from './styles'
 import HarvesterIcon from './harvester.inline.svg'
 import TractorIcon from './tractor.inline.svg'
-import { Button } from '../Button'
+import { Button } from '@/ui/components/Button'
 
 const firstCardtext =
   "$FARM is at heart of Harvest's protocols, allowing you to capitalize on the overall success of our platform."

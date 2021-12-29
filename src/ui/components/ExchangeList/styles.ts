@@ -21,8 +21,6 @@ const ListContainer = styled.ul`
 const CoinbaseIconContainer = styled.div`
   height: 32px;
   width: 158px;
-  cursor: pointer;
-  display: block;
   position: relative;
   margin-top: -6px;
 
@@ -46,8 +44,6 @@ const CoinbaseIconContainer = styled.div`
 const BinanceIconContainer = styled.div`
   height: 33px;
   width: 163px;
-  cursor: pointer;
-  display: block;
 
   svg {
     height: 33px;
@@ -69,8 +65,6 @@ const BinanceIconContainer = styled.div`
 const CryptoComIconContainer = styled.div`
   height: 45px;
   width: 194px;
-  cursor: pointer;
-  display: block;
 
   svg {
     height: 45px;
@@ -94,8 +88,6 @@ const CryptoComIconContainer = styled.div`
 const BancorIconContainer = styled.div`
   height: 48px;
   width: 145px;
-  cursor: pointer;
-  display: block;
   position: relative;
   margin-left: -20px;
 
@@ -126,11 +118,8 @@ const Li = styled.li`
   }
 `
 
-const Link = styled.a`
-  all: unset;
-  display: block;
+const ExchangeContainer = styled.div`
   height: 100%;
-  cursor: pointer;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -141,7 +130,7 @@ export const Styled = {
   BinanceIconContainer,
   CryptoComIconContainer,
   BancorIconContainer,
-  Link,
+  ExchangeContainer,
   Li,
   ListContainer,
 }

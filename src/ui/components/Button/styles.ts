@@ -19,7 +19,8 @@ const Button = styled.button<ButtonProps & { isClicked: boolean }>`
       font-weight: ${FontWeight.BOLD};
       font-size: 16px;
       line-height: 65px;
-      transition: background 0.2s;
+      transition: background 0.2s, box-shadow 0.2s;
+      
 
       @media (max-width: ${Size.MOBILE_WIDTH + 1}px) {
         width: ${props.mobileWidth};

@@ -36,9 +36,11 @@ export const PeopleEarning: FC = () => {
         })
 
         setNumberOfPeople(makePrettyNumber(transactions[0].allOwnersCount))
+      } else {
+        setNumberOfPeople('Network error')
       }
-      setNumberOfPeople('Network error')
     }
+
     getUsersNumber()
   })
 
@@ -49,7 +51,7 @@ export const PeopleEarning: FC = () => {
           <Styled.LeftBlock>
             <Styled.NumberOfPeople>{numberOfPeople}</Styled.NumberOfPeople>
             <Styled.Text>
-              People earning <br />
+              Users earning <br />
               With us
             </Styled.Text>
             {/* <Styled.ButtonContainer>
@@ -88,7 +90,7 @@ export const PeopleEarning: FC = () => {
       </Styled.Container>
       <Styled.MobileContainer>
         <Styled.NumberOfPeople>{numberOfPeople}</Styled.NumberOfPeople>
-        <Styled.Text>People earning With us</Styled.Text>
+        <Styled.Text>Users earning With us</Styled.Text>
         <Styled.CardMobileContainer>
           <Card
             icon={icon7}

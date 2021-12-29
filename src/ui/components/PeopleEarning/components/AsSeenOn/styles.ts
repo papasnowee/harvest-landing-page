@@ -20,7 +20,10 @@ const Text = styled.div`
   }
 `
 
-const CoindeskContainer = styled.div`
+const CoindeskContainer = styled.a`
+  all: unset;
+  display: block;
+  cursor: pointer;
   width: 205px;
   height: 40px;
 
@@ -41,7 +44,7 @@ const CoindeskContainer = styled.div`
   }
 `
 
-const CointelegraphContainer = styled.div`
+const CointelegraphContainer = styled(CoindeskContainer)`
   width: 254px;
   height: 48px;
 

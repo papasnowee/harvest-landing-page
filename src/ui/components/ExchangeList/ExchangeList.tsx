@@ -10,32 +10,32 @@ export const ExchangeList: FC = () => {
   return (
     <Styled.ListContainer>
       <Styled.Li>
-        <Styled.Link href="https://www.coinbase.com/">
+        <Styled.ExchangeContainer>
           <Styled.CoinbaseIconContainer>
             <CoinbaseIcon />
           </Styled.CoinbaseIconContainer>
-        </Styled.Link>
+        </Styled.ExchangeContainer>
       </Styled.Li>
       <Styled.Li>
-        <Styled.Link href="https://www.crypto.com/">
+        <Styled.ExchangeContainer>
           <Styled.CryptoComIconContainer>
             <CryptoComIcon />
           </Styled.CryptoComIconContainer>
-        </Styled.Link>
+        </Styled.ExchangeContainer>
       </Styled.Li>
       <Styled.Li>
-        <Styled.Link href="https://www.binance.com/">
+        <Styled.ExchangeContainer>
           <Styled.BinanceIconContainer>
             <BinanceIcon />
           </Styled.BinanceIconContainer>
-        </Styled.Link>
+        </Styled.ExchangeContainer>
       </Styled.Li>
       <Styled.Li>
-        <Styled.Link href="https://www.bancor.network/">
+        <Styled.ExchangeContainer>
           <Styled.BancorIconContainer>
             <BancorIcon />
           </Styled.BancorIconContainer>
-        </Styled.Link>
+        </Styled.ExchangeContainer>
       </Styled.Li>
     </Styled.ListContainer>
   )

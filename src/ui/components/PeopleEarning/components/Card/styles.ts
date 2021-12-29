@@ -9,15 +9,11 @@ const Container = styled.div`
   display: flex;
   padding: 0 24px 0 24px;
   justify-content: space-between;
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 91.82%);
+  border: 1.5px solid #dddde9;
   filter: drop-shadow(4px 16px 40px rgba(39, 68, 95, 0.1));
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-
-  &:hover {
-    box-shadow: 4px 16px 60px rgba(39, 68, 95, 0.18);
-    background: ${Color.white};
-  }
+  background: ${Color.white};
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     width: 280px;
