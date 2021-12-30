@@ -61,29 +61,22 @@ export const PeopleEarning: FC = () => {
           </Styled.LeftBlock>
           <Styled.CardBlock>
             <Styled.CardColumn>
-              <Card icon={icon1} userAddress="edelarocha.eth" percent={4.94} perDay={78.97} />
-              <Card icon={icon2} userAddress="expl.eth" percent={0.02} perDay={20.58} />
-              <Card icon={icon3} userAddress="farmerfud.eth" percent={0.01} perDay={14.81} />
+              <Card icon={icon1} userAddress="edelarocha.eth" perDay={78.97} />
+              <Card icon={icon2} userAddress="expl.eth" perDay={20.58} />
+              <Card icon={icon3} userAddress="farmerfud.eth" perDay={14.81} />
             </Styled.CardColumn>
             <Styled.CardColumn>
               <Card
                 icon={icon4}
                 userAddress="0xb78eeb513f717a29089efb023e80f927ca2f0346"
-                percent={0.01}
                 perDay={558.52}
               />
               <Card
                 icon={icon5}
                 userAddress="0x50AdF7A75d7cD6132ACc0a2FB21C019011286635"
-                percent={0.02}
                 perDay={67.35}
               />
-              <Card
-                icon={icon6}
-                userAddress="heartfund.heartrithm.eth"
-                percent={0.06}
-                perDay={532.67}
-              />
+              <Card icon={icon6} userAddress="heartfund.heartrithm.eth" perDay={532.67} />
             </Styled.CardColumn>
           </Styled.CardBlock>
         </Styled.TopBlockContainer>

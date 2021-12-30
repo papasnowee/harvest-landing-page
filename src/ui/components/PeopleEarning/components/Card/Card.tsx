@@ -4,7 +4,7 @@ import { Styled } from './styles'
 
 interface Props {
   userAddress: string
-  percent: number
+  // percent: number
   perDay: number
   icon: any // svg import
 }
@@ -26,7 +26,7 @@ export const Card: FC<Props> = (props) => {
   const { icon, userAddress, perDay, percent } = props
   const Icon = icon
   const prettyPerDay = makePrettyCurrency(Number(perDay.toFixed(2)))
-  const prettyPercent = makePrettyNumber(Number(percent.toFixed(1)))
+  // const prettyPercent = makePrettyNumber(Number(percent.toFixed(1)))
 
   const calcPercentSign = (percent: number) => {
     if (percent === 0) return ''
@@ -42,10 +42,10 @@ export const Card: FC<Props> = (props) => {
         <Styled.UserAddress>{userAddress}</Styled.UserAddress>
         <Styled.BottomBlock>
           <Styled.PerDayContainer>{prettyPerDay} / day</Styled.PerDayContainer>
-          <Styled.Percent>
+          {/* <Styled.Percent>
             {calcPercentSign(percent)}
             {prettyPercent}%
-          </Styled.Percent>
+          </Styled.Percent> */}
         </Styled.BottomBlock>
       </Styled.RightBlock>
     </Styled.Container>
