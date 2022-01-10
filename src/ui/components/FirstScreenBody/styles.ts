@@ -35,9 +35,9 @@ const LeftBlock = styled.div`
 `
 const MainTextContainer = styled.div`
   font-weight: ${FontWeight.BOLD};
-  font-size: 52px;
+  font-size: 82px;
   color: ${Color.white};
-  line-height: 68px;
+  line-height: 88px;
   margin-bottom: 29px;
 `
 
