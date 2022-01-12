@@ -39,7 +39,10 @@ const AuditorsContainer = styled.div`
   }
 `
 
-const LeastAuthorityContainer = styled.div`
+const LeastAuthorityContainer = styled.a`
+  all: unset;
+  display: block;
+  cursor: pointer;
   width: 242px;
   height: 49px;
   margin-bottom: 3px;
@@ -63,7 +66,10 @@ const LeastAuthorityContainer = styled.div`
   }
 `
 
-const HaechiContainer = styled.div`
+const HaechiContainer = styled.a`
+  all: unset;
+  display: block;
+  cursor: pointer;
   width: 192px;
   height: 39.65px;
   margin-top: 6px;
@@ -87,7 +93,10 @@ const HaechiContainer = styled.div`
     }
   }
 `
-const PeckShieldContainer = styled.div`
+const PeckShieldContainer = styled.a`
+  all: unset;
+  display: block;
+  cursor: pointer;
   width: 199px;
   height: 56px;
   margin-bottom: -3px;
@@ -111,7 +120,10 @@ const PeckShieldContainer = styled.div`
   }
 `
 
-const CertikContainer = styled.div`
+const CertikContainer = styled.a`
+  all: unset;
+  display: block;
+  cursor: pointer;
   width: 206px;
   height: 53px;
 

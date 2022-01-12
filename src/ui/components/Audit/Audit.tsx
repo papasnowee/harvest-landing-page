@@ -12,16 +12,16 @@ export const Audit: FC = () => {
       <Styled.Text>Audited by:</Styled.Text>
 
       <Styled.AuditorsContainer>
-        <Styled.LeastAuthorityContainer>
+        <Styled.LeastAuthorityContainer href="https://github.com/harvest-finance/harvest/blob/master/audits/LeastAuthority-Harvest.pdf">
           <LeastAuthorityIcon />
         </Styled.LeastAuthorityContainer>
-        <Styled.HaechiContainer>
+        <Styled.HaechiContainer href="https://github.com/harvest-finance/harvest/blob/master/audits/Haechi-Harvest.pdf">
           <HaechiIcon />
         </Styled.HaechiContainer>
-        <Styled.PeckShieldContainer>
+        <Styled.PeckShieldContainer href="https://github.com/harvest-finance/harvest/blob/master/audits/PeckShield-Harvest.pdf">
           <PeckShieldIcon />
         </Styled.PeckShieldContainer>
-        <Styled.CertikContainer>
+        <Styled.CertikContainer href="https://github.com/harvest-finance/harvest/blob/master/audits/CertiK-Harvest.pdf">
           <CertikIcon />
         </Styled.CertikContainer>
       </Styled.AuditorsContainer>

@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import SVGMainPicture from '@/pictures/mainPicture3.inline.svg'
+import SVGMainPicture from '@/pictures/mainPicture.inline.svg'
 import SVGMainPictureMobile from '@/pictures/mainPictureMobile.inline.svg'
 import FooterIcon from '@/pictures/footer.inline.svg'
 import MobileFooterIcon from '@/pictures/mobileFooter.inline.svg'

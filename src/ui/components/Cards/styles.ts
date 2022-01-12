@@ -22,7 +22,7 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 560px;
-  height: 466px;
+  height: 495px;
   padding: 0 50px 50px 50px;
 
   background: ${Color.white};
@@ -31,16 +31,10 @@ const CardContainer = styled.div`
 
   @media (max-width: ${Size.MOBILE_WIDTH}px) {
     width: 280px;
-    height: 382px;
+    height: 414px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     border-radius: 8px;
     padding: 0 24px 24px 24px;
-  }
-`
-
-const CardContainerSecond = styled(CardContainer)`
-  @media (max-width: ${Size.MOBILE_WIDTH}px) {
-    height: 357px;
   }
 `
 
@@ -125,7 +119,6 @@ const ButtonContainer = styled.div`
 `
 
 export const Styled = {
-  CardContainerSecond,
   ButtonContainer,
   Text,
   MainTextContainer,
