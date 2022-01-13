@@ -85,18 +85,8 @@ export const PeopleEarning: FC = () => {
         <Styled.NumberOfPeople>{numberOfPeople}</Styled.NumberOfPeople>
         <Styled.Text>Users earning With us</Styled.Text>
         <Styled.CardMobileContainer>
-          <Card
-            icon={icon7}
-            userAddress="0xecf0545684a06a4ea7b9c2fb1b6c08f50436e9db"
-            percent={3.55555}
-            perDay={111111.44444}
-          />
-          <Card
-            icon={icon8}
-            userAddress="0xecf0545684a06a4ea7b9c2fb1b6c08f50436e9db"
-            percent={3.55555}
-            perDay={111111.44444}
-          />
+          <Card icon={icon7} userAddress="edelarocha.eth" perDay={78.97} />
+          <Card icon={icon8} userAddress="heartfund.heartrithm.eth" perDay={532.67} />
         </Styled.CardMobileContainer>
 
         {/* <Styled.ButtonContainer>
