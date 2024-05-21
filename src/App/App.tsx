@@ -6,6 +6,7 @@ import { Header } from '@/ui/components/Header'
 import { Background } from '@/ui/components/Background'
 import { Styled } from './styles'
 import { Icon } from '@/ui/components/FriendlyCompanies/components/Companies/Icon'
+
 export const App = () => {
   const modalRoot = useRef<any>(null)
 
