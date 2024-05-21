@@ -7,7 +7,7 @@ import { Background } from '@/ui/components/Background'
 import { Styled } from './styles'
 import { Icon } from '@/ui/components/FriendlyCompanies/components/Companies/Icon'
 export const App = () => {
-  const modalRoot = useRef(null)
+  const modalRoot = useRef<any>(null)
 
   return (
     // This container is needed for footer-picture correctly positioning footer picture.
