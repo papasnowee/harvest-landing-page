@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "homepage": "https://papasnowee.github.io/harvest-landing-page/",
+  "homepage": "http://papasnowee.github.io/harvest-landing-page/",
   "scripts": {
     "dev": "webpack-dev-server --port 3000 --mode development --open --hot",
     "build": "webpack --mode production",
